@@ -12,7 +12,7 @@
   src: url("../fonts/a고딕17.eot");
   src: url("../fonts/a고딕17.eot#iefix") format("embedded-opentype"), url("../fonts/a고딕17.woff2") format("woff2"), url("../fonts/KoreanGD17-R.woff") format("woff"), url("../fonts/a고딕17.ttf") format("truetype"); }
 /* tag reset */
-body, h1, h2, h3, h4, h5, p, ul, li, dl, dd, th, td, figure, form, button {
+body, h1, h2, h3, h4, h5, p, ul, li, dl, dt, dd, th, td, figure, form, button {
   margin: 0;
   padding: 0; }
 

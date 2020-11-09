@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0176)file:///C:/Users/208_08/Dropbox/Myweb/4jQuery/05DOM%EC%A0%9C%EC%96%B4/5%EB%AF%B8%EB%8B%88%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C_%ED%95%98%EB%82%98%EC%94%A9%EC%9D%B4%EB%8F%99.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title> 하나씩 이동하는 미니 슬라이더 </title>
+  <style>
+    *{margin: 0;padding: 0;}
+    ul{list-style: none;}
+    img{vertical-align: top;}
+    button{border: none;background: none;cursor: pointer;}
+
+    #miniSlider{position: relative;width: 530px;padding: 5px 50px;border: 1px solid #000;margin: 100px auto;/* overflow: hidden; */}
+    .visual{width: 840px;height: 100px;}/* 하나의 크기 105 x 8 (하나를 복제) */
+    .visual li{float: left;margin-left: 5px;}
+    .control button{position: absolute;top: 0;width: 50px;height: 110px;background: red;color: #ffffff;}
+    .control #prev{left: 0;}
+    .control #next{right: 0;}
+  </style>
+  <script src="./하나씩 이동하는 미니 슬라이더_files/jquery-1.12.4.min.js.다운로드"></script>
+  <script>
+      $(document).ready(function(){
+        /* 
+        미니 슬라이드 순서
+
+        [이전버튼을 클릭했을 때]
+
+        1. ul.visual의 마지막 li(last)를 선택해서 복제(clone)
+        2. 복제한 li를 .visual의 첫번째 자식으로 생성(prepend)
+        3. 복제한 li를 첫번째 자식으로 넣는다면 animate를 안해도 첫번쨰 자식으로 들어온만큼         밀리기때문에 ul.visual의 margin-left:-105(이미지 한칸크기)해준다
+        4. ul.visual을 animate() => margin-left:0;
+        5. animate가 종료된 시점인 완료함수로 가장 마지막에 li를 삭제(remove)
+
+        [다음버튼을 클릭했을 때]
+
+        1. ul.visual의 첫번째 li(first)를 선택해서 복제(clone)
+        2. 복제한 li를 마지막 자식으로 넣는다.
+        3. ul.visual을 animate() => margin-left:-105
+        4. animate() 완료후 => 첫번째 li를 삭제하는데
+
+         */
+        var _visual = $('#miniSlider .visual');
+
+        //이전버튼 클릭
+        $('.control #prev').on('click',function(){
+            //0) .visual이 현재 animate중일 경우 강제 종료
+            if(_visual.is(':animated')) return false;
+        
+            //1)ul의 마지막 li를 선택해서 복제
+            //2)복제한 li를 .visual의 첫번째 자식으로 생성(prepend)
+            //3)ul.visual을 animate() => margin-left:0;
+            //4)ul.visual을 animate() => margin-left:0;
+            _visual.prepend( _visual.children().last().clone()).css({marginLeft:'-105px'}).animate({marginLeft:0},function(){
+              console.log($(this));  //ul.visual
+              //5)5.animate가 종료된 시점인 완료함수로 가장 마지막에 li를 삭제(remove)
+              $(this).children().last().remove();  
+            });
+
+        //다음버튼 클릭
+        $('.control #next').on('click',function(){
+            _visual.append(_visual.children().first().clone()).animate({marginLeft:'-105px'},function(){      
+                $(this).css({marginLeft:'0'}).children().first().remove();  
+            });
+
+
+            });
+                       
+        });
+      });
+  </script>
+</head>
+<body>
+  <div id="miniSlider">
+    <ul class="visual" style="margin-left: 0px;"><li><img src="./하나씩 이동하는 미니 슬라이더_files/pic5.jpg" alt="..."></li><li><img src="./하나씩 이동하는 미니 슬라이더_files/pic6.jpg" alt="..."></li><li><img src="./하나씩 이동하는 미니 슬라이더_files/pic7.jpg" alt="..."></li><li><img src="./하나씩 이동하는 미니 슬라이더_files/pic1.jpg" alt="..."></li><li><img src="./하나씩 이동하는 미니 슬라이더_files/pic2.jpg" alt="..."></li><li><img src="./하나씩 이동하는 미니 슬라이더_files/pic3.jpg" alt="..."></li><li><img src="./하나씩 이동하는 미니 슬라이더_files/pic4.jpg" alt="..."></li>
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+    <div class="control">
+      <button type="button" id="prev">이전</button>
+      <button type="button" id="next">다음</button>
+    </div>
+  </div>
+
+</body></html>

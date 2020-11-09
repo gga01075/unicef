@@ -1,0 +1,22 @@
+<svg id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.8 11.98">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-width: 3px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #231815;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>common_arrow</title>
+  <polyline class="cls-1" points="0 10.48 68.22 10.48 58.95 1.05"/>
+  <path class="cls-2" d="M66.24,5" transform="translate(0 2.59)"/>
+</svg>

@@ -62,15 +62,59 @@ body{font-family:Score4,"맑은 고딕","Malgun Gothic",sans-serif;font-size: 12
 
 #gnb{display: none;position: fixed;top: 60px;left: 100%;width: 100%;height: calc(100% - 60px);
 background:$secondColor;color: #000;overflow-y: auto;
+  a{display: block;}
   >ul{
-      padding-top: 60px;font-family:aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;font-size: 30px;padding-left: 75px;
-      >li{
-          position: relative;padding-top: 40px;
-          &::before{content:"";position: absolute;bottom:-5px;left: 20px;width: calc(100% - 20px);height: 2px;background:$firstColor;}
-          &::after{content:"";position: absolute;bottom:10px;right: 10px;display: inline-block;width: 25px;height: 16px;background:url("../images/common/gnb_arrow.svg") no-repeat center;}
+      padding-top: 60px;padding-left: 75px;font-family:aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;font-size: 30px;
+      >li{  
+        +li{margin-top: 40px;}
+          >a{
+            position: relative;height: 30px;line-height: 30px;
+            &::before{
+              content:"";position: absolute;bottom:-5px;left: 20px;width: calc(100% - 20px);height: 2px;background:$firstColor;}
+            &::after{
+              content:"";position: absolute;bottom:10px;right: 10px;display: inline-block;width: 25px;height: 16px;background:url("../images/common/gnb_arrow.svg") no-repeat center;
+            }
+          }  
          }
-    li ul{display: none;}
-  } 
+      } 
+  .depth2{
+    &, &>li>a::before,&>li>a::after{ @include transition(all .5s);}
+    display: none;position: relative;padding-bottom: 60px;left: 0;
+    >li{
+      +li{margin-top: 40px;}
+      >a{
+        font-size: 18px;position: relative;height: 30px;line-height: 30px;
+        &::before{
+          content:"";position: absolute;bottom:-5px;left: 20px;width:100%;height: 2px;background:$firstColor;}
+        &.has_arrow::after{
+          @include transition(0.5s);
+          content:"";position: absolute;bottom:10px;right: 10px;display: inline-block;width: 25px;height: 16px;background:url("../images/common/gnb_arrow.svg") no-repeat center;
+        }
+      }
+      >ul{
+        display:none;padding:30px 0 0 30px;
+        >li{
+            >a{font-size: 16px;height: 40px;line-height: 40px;}
+        }
+
+      
+      }
+    }
+    &.on{
+        
+        & li a::before{
+          left:-5px;
+        }
+        & li a::after{
+          @include transform(rotate(90deg));
+        }
+        & li.dep3_on a::after{
+          @include transform(rotate(-90deg));
+        }
+
+    }
+  
+  }
 }      
 
 

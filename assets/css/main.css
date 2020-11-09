@@ -2,8 +2,7 @@
 /* index공통스타일 */
 #container {
   position: relative;
-  top: 60px;
-  left: 0; }
+  padding-top: 60px; }
 
 #container article + article {
   padding-top: 80px; }
@@ -169,7 +168,8 @@
           font-weight: 500; }
           .news .swiper-container .swiper-slide dl dd:first-of-type {
             top: 15px;
-            left: 0; }
+            left: 0;
+            font-size: 12px; }
           .news .swiper-container .swiper-slide dl dd:last-of-type {
             top: 90px;
             left: 0; }
@@ -207,7 +207,8 @@
       position: absolute; }
     .news #newsMore span {
       top: -10px;
-      left: -16px; }
+      left: -16px;
+      font-weight: 600; }
     .news #newsMore img {
       width: 80px;
       height: 12px; }
@@ -270,13 +271,65 @@
         height: 12px; }
 
 #footer {
-  background: #DDD;
-  color: #000; }
-  #footer .btm_list ul::after {
-    content: "";
-    display: block;
-    clear: both; }
-  #footer .btm_list ul li {
-    float: left; }
+  position: relative;
+  background: #ddd;
+  color: #000;
+  padding: 40px 0 70px;
+  text-align: center;
+  font-weight: 600; }
+  #footer .btm_list ul {
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px; }
+    #footer .btm_list ul::after {
+      content: "";
+      display: block;
+      clear: both; }
+    #footer .btm_list ul li {
+      float: left;
+      width: 96px; }
+      #footer .btm_list ul li + li {
+        margin-left: 5px; }
+      #footer .btm_list ul li:nth-of-type(3n+1) {
+        margin-left: 0; }
+      #footer .btm_list ul li:nth-of-type(n+4) {
+        margin-top: 20px; }
+  #footer .company_info {
+    margin-top: 20px; }
+    #footer .company_info li {
+      margin-bottom: 20px; }
+      #footer .company_info li dl {
+        display: inline-block;
+        margin: 0 auto; }
+        #footer .company_info li dl::after {
+          content: "";
+          display: block;
+          clear: both; }
+        #footer .company_info li dl dt {
+          float: left; }
+        #footer .company_info li dl dd {
+          float: left; }
+  #footer #topBtn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-indent: 7px; }
+    #footer #topBtn::after {
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: #aaa;
+      content: "";
+      position: absolute;
+      right: 5px;
+      top: -5px;
+      z-index: 1;
+      width: 27px;
+      height: 27px; }
+    #footer #topBtn img {
+      -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      width: 40px;
+      height: 30px;
+      position: relative;
+      z-index: 2; }
 
 /*# sourceMappingURL=main.css.map */

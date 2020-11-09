@@ -150,15 +150,20 @@ body {
   background: #badbd1;
   color: #000;
   overflow-y: auto; }
+  #gnb a {
+    display: block; }
   #gnb > ul {
     padding-top: 60px;
+    padding-left: 75px;
     font-family: aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;
-    font-size: 30px;
-    padding-left: 75px; }
-    #gnb > ul > li {
+    font-size: 30px; }
+    #gnb > ul > li + li {
+      margin-top: 40px; }
+    #gnb > ul > li > a {
       position: relative;
-      padding-top: 40px; }
-      #gnb > ul > li::before {
+      height: 30px;
+      line-height: 30px; }
+      #gnb > ul > li > a::before {
         content: "";
         position: absolute;
         bottom: -5px;
@@ -166,7 +171,7 @@ body {
         width: calc(100% - 20px);
         height: 2px;
         background: #3d1322; }
-      #gnb > ul > li::after {
+      #gnb > ul > li > a::after {
         content: "";
         position: absolute;
         bottom: 10px;
@@ -175,8 +180,59 @@ body {
         width: 25px;
         height: 16px;
         background: url("../images/common/gnb_arrow.svg") no-repeat center; }
-    #gnb > ul li ul {
-      display: none; }
+  #gnb .depth2 {
+    display: none;
+    position: relative;
+    padding-bottom: 60px;
+    left: 0; }
+    #gnb .depth2, #gnb .depth2 > li > a::before, #gnb .depth2 > li > a::after {
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+    #gnb .depth2 > li + li {
+      margin-top: 40px; }
+    #gnb .depth2 > li > a {
+      font-size: 18px;
+      position: relative;
+      height: 30px;
+      line-height: 30px; }
+      #gnb .depth2 > li > a::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 20px;
+        width: 100%;
+        height: 2px;
+        background: #3d1322; }
+      #gnb .depth2 > li > a.has_arrow::after {
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        display: inline-block;
+        width: 25px;
+        height: 16px;
+        background: url("../images/common/gnb_arrow.svg") no-repeat center; }
+    #gnb .depth2 > li > ul {
+      display: none;
+      padding: 30px 0 0 30px; }
+      #gnb .depth2 > li > ul > li > a {
+        font-size: 16px;
+        height: 40px;
+        line-height: 40px; }
+    #gnb .depth2.on li a::before {
+      left: -5px; }
+    #gnb .depth2.on li a::after {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
+    #gnb .depth2.on li.dep3_on a::after {
+      -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg); }
 
 .btn_menu {
   top: 16px;

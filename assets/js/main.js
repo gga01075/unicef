@@ -36,7 +36,7 @@ $(document).ready(function(){
         var now = new Date();
         var nowYy = now.getFullYear();
   
-        var dDay = new Date(nowYy,10,25);
+        var dDay = new Date(nowYy,11,10);
   
         var remain = dDay - now;
         var remainDay = Math.floor(remain/(1000*60*60*24));   

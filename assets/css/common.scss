@@ -192,4 +192,14 @@ background:$secondColor;color: #000;overflow-y: auto;
         }
     }
 }
-    
+
+
+/* 모든 페이지 공통 */
+#container{position: relative;padding-top: 60px;}
+#container h2,#container h3{font-size: 24px;}
+#container h3,#container strong,#container dl dt{font-family:aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;}
+#container .don_btn{ 
+  @include radius(10px);
+  display: inline-block;text-align: center;
+  width: 100px;height: 35px;line-height: 35px;font-weight: 600;
+}

@@ -15,7 +15,6 @@ $(document).ready(function(){
             $('#gnb>ul>li>ul').hide().css({left:0}).removeClass('on').find('>li').removeClass().find('ul').hide();
             _depth2_now.hide();  
 
-
         }else{                          //gnb열때
             $(this).addClass('active').find('.blind_b').text('메뉴 닫기');
             _gnb.css({display:'block'}).stop().animate({left:0},function(){
@@ -32,6 +31,8 @@ $(document).ready(function(){
         $(this).next().show().animate({left:'-70px'},'fast');
         $('#gnb>ul>li>a').css({display:'none'});
         $(this).next().addClass('on');
+
+        return false;
     });
 
     //#gnb depth2 a클릭
@@ -53,14 +54,10 @@ $(document).ready(function(){
         _dep1a.stop().animate({left:'0px'}).removeClass('on').find('>li').removeClass().find('ul').hide();
     });
 
-
-
-
     //#footer Top버튼 클릭 애니메이션
     $('#footer #topBtn').on('click',function(){
         $('html,body').stop().animate({scrollTop:0});
 
         return false;
     });
-
 });

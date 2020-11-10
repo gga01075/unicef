@@ -2,14 +2,11 @@
 @import "_mixin","_var";
 
 /* index공통스타일 */
-#container{position: relative;padding-top: 60px;}
 #container article+article{padding-top: 80px;}
-#container h3{font-size: 24px;}
-#container h3,#container strong,#container dl dt{font-family:aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;}
 
 /* .slogan */
 .slogan{
-    padding-bottom: 80px;
+    padding-bottom: 80px;position: fixed;top: 60px;left: 0;
     .swiper-container{
         width: 300px;height: 400px;margin:0;left: 0;
         .swiper-wrapper{
@@ -20,16 +17,40 @@
                    position: absolute;bottom: 17%;left: 20px;
                    strong{display: inline-block;font-size: 24px;letter-spacing: -2.2px;margin-bottom: 10px;}
                    p{font-size: 14px;}
-
                 }
+                &.slide1{background-image:url("../images/main/index-slogan1x1.jpg");}
+                &.slide2{background-image:url("../images/main/index-slogan2x1.jpg");}
+                &.slide3{background-image:url("../images/main/index-slogan3x1.jpg");}
+
+                /* slogan mask 애니메이션 */
+                .slide_mask{
+                    position: absolute;top: 0;left: 0;z-index: 1;width: 100%;height: 400px;
+                    &::after{content:"";display: block;clear: both;}
+                    .mask{
+                        position: relative;float: left;
+                        width: calc(25% - 1px);border-right: 1px solid rgba(204, 204, 204,0.3);height: 100%;
+                        &::after{
+                            @include transition(all 0.5s);
+                            content:"";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #000;opacity: 1;
+                        }
+                        &.mask1::after{@include traDelay(0s);}
+                        &.mask2::after{@include traDelay(0.3s);}
+                        &.mask3::after{@include traDelay(0.6s);}
+                        &.mask4::after{@include traDelay(0.9s);}
+                    }
+                }
+
             }
-            .slide1{background-image:url("../images/main/index-slogan1x1.jpg");}
-            .slide2{background-image:url("../images/main/index-slogan2x1.jpg");}
-            .slide3{background-image:url("../images/main/index-slogan3x1.jpg");}
+            .swiper-slide.swiper-slide-active{
+                .mask::after{width: 0;opacity: 0;}
+            }
+            
         }
     }
     &::after{content:"";position: absolute;top: 220px;right: 0;width: 184px;height: 217px;background: #e4e4e4;}
 }
+
+#relContent{position: relative;z-index: 200;background: #fff;}
 
 /* .corona */
 .corona{
@@ -56,10 +77,7 @@
               li+li{margin-left: 19px;}
               &::after{content:"";position: absolute;right: 0;bottom: 0;width: 1px;height: 40px;background: #000;}   
         }
-        a{
-            @include radius(10px);display: inline-block;
-            width: 100px;height: 35px;line-height: 35px;margin-top: 25px;background:$firstColor;color: #fff;}
-
+        a{margin-top: 25px;background:$firstColor;color: #fff;}
     }
 }
 
@@ -107,19 +125,16 @@
         img{width: 80px;height: 12px;}
       }
 }
-
-
+/* UCHAMP */
 .uchamp{
     @include bgsize(cover);
-    margin-top: 85px;padding-top: 105px !important; padding-bottom: 50px;
+    margin-top: 85px;padding-top: 105px !important; padding-bottom: 540px;
     background: $firstColor url("../images/main/uchamp_bg2.svg") no-repeat; 
 
     h3 {
         text-align: center;text-indent:28px;letter-spacing: -1px;
         span{color: #000;}
     }
-
-
     .uchamp_recruit{
      margin-top: 260px;
      p:first-of-type{font-size: 14px;letter-spacing: -1px;margin-bottom: 45px;}

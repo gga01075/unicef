@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> unicef </title>
+    <title> 정기후원 : donation </title>
     <link rel="stylesheet" href="../assets/css/swiper-bundle.css">
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/sub.css">
@@ -19,7 +19,7 @@
         <!-- #header -->
         <header id="header">
             <h1 class="logo">
-                <a href="./index.html"><img src="../assets/images/common/unicef_logo.svg" alt=""></a>
+                <a href="../index.html"><img src="../assets/images/common/unicef_logo.svg" alt="유니세프"></a>
             </h1>
             <button class="btn_menu">
                 <span class="blind_b">메뉴 열기</span>
@@ -29,8 +29,8 @@
             </button>
             <nav id="gnb">
                 <button class="depth2_now">
-                    <img src="assets/images/common/gnb-back-arrow.svg" alt="">
-                    <span></span>
+                    <img src="../assets/images/common/gnb-back-arrow.svg" alt="">
+                    <span>about us</span>
                 </button>
                 <ul>
                     <li>
@@ -61,9 +61,9 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">donation</a>
+                        <a href="./reg_donation.html">donation</a>
                         <ul class="depth2">
-                            <li><a href="">정기후원</a></li>
+                            <li><a href="./reg_donation.html">정기후원</a></li>
                             <li><a href="">일시후원</a></li>
                             <li><a href="">기업후원</a></li>
                             <li><a href="">생명을 구하는 선물</a></li>
@@ -120,9 +120,146 @@
         </header>
         <!-- #container -->
         <section id="container">
-           <div class="sub_tit">
-
+           <div class="sub_tit reg_tit p_r">
+               <div class="subtit_txt p_a">
+                   <h2>정기후원</h2> 
+                   <p>어린이의 생명을 살리는 
+                    아름다운 약속</p>
+                   <a href="#" class="don_btn reg_btn">후원하기</a>
+               </div>
            </div>
+           <article class="why_reg p_r">
+               <div class="inner">
+                   <h3>&quot;왜 정기후원을 해야하나요?&quot;</h3>
+                   <img src="../assets/images/sub/why.png" alt="">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <div class="img_wrap">
+                                    <img src="../assets/images/sub/reg-why-slideImg1x1.jpg" alt="">
+                                </div>
+                                <div class="why_txt">
+                                    <strong>생명을 구하는 일, <br> 단 하루도 멈출 수 없습니다.</strong>
+                                    <p> 매년 어린이 590만 명이 다섯 번째 생일을 맞기 전 목숨을 잃습니다.</p>
+                                </div>
+                            </div>   
+                            <div class="swiper-slide slide2">
+                                <div class="img_wrap">
+                                    <img src="../assets/images/sub/reg-why-slideImg2x1.jpg" alt="">
+                                </div>
+                                <div class="why_txt">
+                                    <strong>긴급상황 시 72시간 내도울 수 있습니다.</strong>
+                                    <p>정기후원금으로 자연재해, 전쟁 등 긴급 상황 발생 즉시 아이들을 구할 수 있습니다.</p>
+                                </div>
+                            </div>   
+                            <div class="swiper-slide slide3">
+                                <div class="img_wrap">
+                                    <img src="../assets/images/sub/reg-why-slideImg3x1.jpg" alt="">
+                                </div>
+                                <div class="why_txt">
+                                    <strong>어린이들의 꿈과 미래, 꾸준한 도움이 필요합니다.</strong>
+                                    <p>교육을 통해 아이들은 올바르게 성장하고 스스로 자립할 수 있습니다.</p>
+                                </div>
+                            </div>   
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev prev_next">
+                            <img src="../assets/images/common/common_back_arrow.svg" alt="">
+                        </div>
+                        <div class="swiper-button-next prev_next">
+                            <img src="../assets/images/common/common_arrow.svg" alt="">
+                        </div>
+                    </div>
+               </div>
+           </article>
+           <article class="how_reg p_r">
+               <div class="how_bg"></div>
+               <div class="inner">
+                   <h3>정기후원으로 <span>어떻게 도울까?</span></h3>
+                   <img src="../assets/images/sub/moonlight.svg" alt="">
+                   <div id="howregTab">
+                        <ul role="tablist" class="tablist" aria-label="인프라점검"> 
+                            <li id="tab1" role="tab" class="tab first" aria-controls="tabpanel1">교육</li>
+                            <li id="tab2" role="tab" class="tab" aria-controls="tabpanel2">영양</li>
+                            <li id="tab3" role="tab" class="tab" aria-controls="tabpanel3">예방접종</li>
+                            <li id="tab4" role="tab" class="tab" aria-controls="tabpanel4">말라리아</li>
+                            <li id="tab5" role="tab" class="tab" aria-controls="tabpanel5">건강</li>
+                            <li id="tab6" role="tab" class="tab last" aria-controls="tabpanel5">이동수단과 보호시설</li>
+                        </ul>
+                        <div id="tabpanel1" role="tabpanel" class="tabpanel active" aria-labelledby="tab1">
+                            <p class="reg_money">월 <span>3만원</span> 정기후원으로</p>
+                            <p>매월 공책 80권, 연필 290자루를 전달하고 어린이들이 공부할 수 있는 시설을 지원할 수 있습니다.</p>
+                            <img src="../assets/images/sub/reg-how-img1x1.jpg" alt="">
+                        </div>
+                        <div id="tabpanel2" role="tabpanel" class="tabpanel" aria-labelledby="tab2">
+                            <p class="reg_money">월 <span>3만원</span> 정기후원으로</p>
+                            <p>매년 영양실조에 걸린 어린이 40명을 구하고 영양실조 예방 활동을 지원할 수 있습니다.</p>
+                            <img src="../assets/images/sub/reg-how-img2x1.jpg" alt="">
+                        </div>
+                        <div id="tabpanel3" role="tabpanel" class="tabpanel" aria-labelledby="tab3">
+                            <p class="reg_money">월 <span>3만원</span> 정기후원으로</p>
+                            <p>소아마비에 걸리지 않도록 예방접종을 매월 어린이 50명에게 지원할 수 있습니다.</p>
+                            <img src="../assets/images/sub/reg-how-img3x1.jpg" alt="">
+                        </div>
+                        <div id="tabpanel4" role="tabpanel" class="tabpanel" aria-labelledby="tab4">
+                            <p class="reg_money">월 <span>3만원</span> 정기후원으로</p>
+                            <p>매년 살충 처리된 모기장 100개와 말라리아 치료제 800정을 전달할 수 있습니다</p>
+                            <img src="../assets/images/sub/reg-how-img4x1.jpg" alt="">
+                        </div>
+                        <div id="tabpanel5" role="tabpanel" class="tabpanel" aria-labelledby="tab5">
+                            <p class="reg_money">월 <span>3만원</span> 정기후원으로</p>
+                            <p>매월 어린이 300명에게 구강수분보충염을 제공하고 신생아와 영유아의 면역력을 높일 수 있는 보건 사업을 지원할 수 있습니다.</p>
+                            <img src="../assets/images/sub/reg-how-img5x1.jpg" alt="">
+                        </div>
+                        <div id="tabpanel6" role="tabpanel" class="tabpanel" aria-labelledby="tab6">
+                            <p class="reg_money">월 <span>3만원</span> 정기후원으로</p>
+                            <p>원치 않는 결혼을 하는 여자 어린이, 일하느라 학교에 가지 못 하는 어린이, 강제로 전쟁터에 보내지는 소년병 어린이 등 어린이의 권리를 보호할 수 있습니다.</p>
+                            <img src="../assets/images/sub/reg-how-img6x1.jpg" alt="">
+                        </div>
+                   </div>
+               </div>
+           </article>
+           <article class="by_reg">
+               <h3>후원자님들이 있기에...</h3>
+               <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <div class="graph1950"><span>1950년</span></div>
+                        <div class="graph2015"><span>2015년</span></div>
+                        <strong>빈곤층 어린이 47% 감소</strong>
+                        <p class="by_txt"><span>하지만, </span>아직도 18세 이하 어린이들이 빈곤층의 47%를 차지합니다.</p>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="graph1950"><span>1950년</span></div>
+                        <div class="graph2015"><span>2015년</span></div>
+                        <strong>기초교육을 받지못한 어린이 44%감소</strong>
+                        <p class="by_txt"><span>하지만, </span>빈곤층 어린이들은 기초교육을 받지못할 가능성이 5배나 더 높습니다.</p>
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <div class="graph1950"><span>1950년</span></div>
+                        <div class="graph2015"><span>2015년</span></div>
+                        <strong>5세 미만의 어린이 사망 53% 감소</strong>
+                        <p class="by_txt"><span>하지만, </span>아직도 5세 미만 빈곤층 어린이들은
+                            사망률이 1.9배나 더 높습니다.</p>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            </article>
+            <!-- 후원하기 버튼섹션 -->
+            <div class="regbtn_area">
+                <p>지금, 유니세프와 함께 정기후원을 시작해보세요.</p>
+                <a href="#" class="don_btn reg_btn">후원하기</a>
+            </div>
         </section>
         <!-- #footer -->
         <footer id="footer">

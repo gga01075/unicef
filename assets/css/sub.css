@@ -131,7 +131,8 @@
       .how_reg .inner #howregTab .tablist {
         white-space: nowrap;
         height: 30px;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        overflow: auto; }
         .how_reg .inner #howregTab .tablist .tab {
           display: inline-block;
           z-index: 100;

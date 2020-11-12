@@ -1,18 +1,20 @@
 @charset "UTF-8";
 /* 서브페이지 공통 */
 .sub_tit {
-  height: 208px;
+  height: 57.77777777777778vw;
   background: no-repeat center;
   color: #fff; }
   .sub_tit .subtit_txt {
-    top: 80px;
-    right: 30px;
-    width: 240px;
-    height: 110px;
+    top: 22.2222222222vw;
+    right: 8.3333333333vw;
+    width: 66.66666666666667vw;
+    height: 30.55555555555556vw;
     text-align: right; }
     .sub_tit .subtit_txt p {
-      margin: 5px 0 15px; }
+      margin: 1.3888888889vw 0 4.1666666667vw; }
   .sub_tit.reg_tit {
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
     background-image: url("../images/sub/reg_donation_tit_bgx1.jpg"); }
 
 /* 정기후원 페이지 공통 */
@@ -24,152 +26,389 @@
 
 .why_reg {
   background: #badbd1;
-  padding: 110px 0 180px; }
+  padding: 30.55555555555556vw 0 50vw; }
   .why_reg .inner h3 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 8.3333333333vw;
     position: relative;
     z-index: 1; }
   .why_reg .inner > img {
     -webkit-transform: rotate(-28deg);
     transform: rotate(-28deg);
     position: absolute;
-    top: 60px;
-    left: 10px;
-    width: 164px;
-    height: 70px;
+    top: 16.6666666667vw;
+    left: 2.7777777778vw;
+    width: 45.55555555555556vw;
+    height: 19.4444444444vw;
     opacity: 0.6; }
   .why_reg .inner .swiper-wrapper .swiper-slide {
     position: relative;
-    height: 500px;
-    padding-top: 50px; }
+    height: 138.8888888888889vw;
+    padding-top: 13.8888888889vw; }
     .why_reg .inner .swiper-wrapper .swiper-slide img {
-      margin: 0 20px;
-      border: 2px solid #fff; }
+      margin: 0 5.5555555556vw;
+      border: 0.5555555555555556vw solid #fff; }
     .why_reg .inner .swiper-wrapper .swiper-slide.slide1 img {
       -webkit-transform: rotate(10deg);
       transform: rotate(10deg);
-      width: 240px;
-      height: 184px; }
+      width: 66.66666666666667vw;
+      height: 51.11111111111111vw; }
     .why_reg .inner .swiper-wrapper .swiper-slide.slide2 img {
       -webkit-transform: rotate(30deg);
       transform: rotate(30deg);
-      width: 216px;
-      height: 140px; }
+      width: 60vw;
+      height: 38.88888888888889vw; }
     .why_reg .inner .swiper-wrapper .swiper-slide.slide3 img {
       -webkit-transform: rotate(-10deg);
       transform: rotate(-10deg);
-      width: 260px;
-      height: 170px; }
+      width: 72.22222222222222vw;
+      height: 47.22222222222222vw; }
     .why_reg .inner .swiper-wrapper .swiper-slide .why_txt {
       position: absolute;
-      top: 285px;
+      top: 79.16666666666667vw;
       left: 0;
       z-index: 100;
       width: 100%;
       opacity: 0; }
       .why_reg .inner .swiper-wrapper .swiper-slide .why_txt strong {
-        font-size: 16px;
+        font-size: 4.4444444444vw;
         display: block;
         text-align: left; }
       .why_reg .inner .swiper-wrapper .swiper-slide .why_txt p {
-        margin-top: 20px;
+        margin-top: 5.5555555556vw;
         font-weight: 600; }
     .why_reg .inner .swiper-wrapper .swiper-slide.swiper-slide-active .why_txt {
       opacity: 1; }
   .why_reg .inner .swiper-pagination.swiper-pagination-fraction {
     top: 74%;
-    bottom: 0; }
+    bottom: 0;
+    font-weight: 600; }
   .why_reg .inner .swiper-pagination .swiper-pagination-current {
-    font-size: 30px;
+    font-size: 8.3333333333vw;
     font-family: aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif; }
   .why_reg .inner .prev_next {
     color: transparent;
     top: 77%; }
     .why_reg .inner .prev_next.swiper-button-prev.swiper-button-disabled, .why_reg .inner .prev_next.swiper-button-next.swiper-button-disabled {
-      opacity: 1; }
+      opacity: 0.5; }
+    .why_reg .inner .prev_next::after {
+      display: none; }
     .why_reg .inner .prev_next.swiper-button-prev {
-      left: 35px; }
+      left: 8.3333333333vw; }
     .why_reg .inner .prev_next.swiper-button-next {
-      right: 15px; }
+      right: 8.3333333333vw; }
     .why_reg .inner .prev_next img {
-      width: 72px;
-      height: 12px; }
+      width: 20vw;
+      height: 3.3333333333vw; }
 
 /* .how_reg */
 .how_reg {
   background: #3d1322;
-  height: 500px;
+  height: 138.8888888888889vw;
   color: #fff;
-  padding-bottom: 120px; }
+  padding-bottom: 33.33333333333333vw; }
   .how_reg .how_bg {
     -webkit-transform: rotate(-25deg);
     transform: rotate(-25deg);
     position: relative;
-    top: -200px;
-    left: -100px;
+    top: -55.55555555555556vw;
+    left: -27.7777777778vw;
     width: 200%;
-    height: 250px;
+    height: 69.44444444444444vw;
     background: #3d1322; }
   .how_reg .inner {
     position: relative;
-    top: -340px;
-    padding-top: 180px; }
+    top: -94.44444444444444vw;
+    padding-top: 50vw; }
     .how_reg .inner > h3 {
       text-align: center;
-      color: #d6cece; }
+      color: #d6cece;
+      margin-bottom: 5.5555555556vw; }
       .how_reg .inner > h3 span {
         color: #ffffff; }
     .how_reg .inner > img {
       position: absolute;
-      top: -95px;
-      left: 58px;
-      height: 470px; }
+      top: -26.38888888888889vw;
+      left: 16.11111111111111vw;
+      height: 130.5555555555556vw; }
     .how_reg .inner #howregTab {
       width: 100%;
-      margin: 30px -30px 0 0; }
-      .how_reg .inner #howregTab .tablist {
-        white-space: nowrap;
-        height: 30px;
-        margin-bottom: 20px;
-        overflow: auto; }
-        .how_reg .inner #howregTab .tablist .tab {
-          display: inline-block;
-          z-index: 100;
-          font-size: 16px;
-          font-family: aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif; }
-          .how_reg .inner #howregTab .tablist .tab + .tab {
-            margin-left: 55px; }
+      margin: 0vw 0 0;
+      position: relative;
+      z-index: 10; }
+      .how_reg .inner #howregTab .tabbtn_wrap {
+        overflow-y: auto; }
+        .how_reg .inner #howregTab .tabbtn_wrap .tablist {
+          width: 138.8888888888889vw;
+          white-space: nowrap;
+          height: 8.3333333333vw;
+          margin-bottom: 5.5555555556vw; }
+          .how_reg .inner #howregTab .tabbtn_wrap .tablist .tab {
+            position: relative;
+            display: inline-block;
+            z-index: 100;
+            font-size: 4.4444444444vw;
+            font-family: aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif; }
+            .how_reg .inner #howregTab .tabbtn_wrap .tablist .tab + .tab {
+              margin-left: 15.27777777777778vw; }
+            .how_reg .inner #howregTab .tabbtn_wrap .tablist .tab::after {
+              -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+              -webkit-transition: transform 0.2s;
+              -moz-transition: transform 0.2s;
+              -o-transition: transform 0.2s;
+              transition: transform 0.2s;
+              content: "";
+              position: absolute;
+              bottom: -1.3888888889vw;
+              left: 0;
+              z-index: 1;
+              width: 100%;
+              height: 0.5555555555555556vw;
+              background: #bdb964; }
+            .how_reg .inner #howregTab .tabbtn_wrap .tablist .tab.active::after {
+              -webkit-transform: scaleX(1);
+              transform: scaleX(1); }
       .how_reg .inner #howregTab .tabpanel {
         display: none;
         color: #000;
-        font-size: 12px;
+        font-size: 3.3333333333vw;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        -webkit-border-radius: 10px;
-        border-radius: 10px;
+        -webkit-border-radius: 2.7777777778vw;
+        border-radius: 2.7777777778vw;
         width: 100%;
-        height: 350px;
-        padding: 23px 29px 0 29px;
+        height: 97.22222222222222vw;
+        padding: 6.388888888888889vw 8.055555555555556vw 0 8.055555555555556vw;
         background: #fff; }
         .how_reg .inner #howregTab .tabpanel .reg_money {
           text-align: center;
           font-weight: 600;
-          font-size: 16px; }
+          font-size: 4.4444444444vw; }
           .how_reg .inner #howregTab .tabpanel .reg_money span {
             font-family: aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;
-            font-size: 18px;
+            font-size: 5vw;
             display: inline-block;
-            padding: 3px 10px;
-            border: 3px solid #000;
+            padding: 0.8333333333vw 2.7777777778vw;
+            border: 0.8333333333333333vw solid #000;
             font-weight: 700; }
         .how_reg .inner #howregTab .tabpanel p:last-of-type {
-          margin-top: 20px;
-          padding: 0 10px;
+          margin-top: 5.5555555556vw;
+          padding: 0 2.7777777778vw;
           font-weight: 600; }
         .how_reg .inner #howregTab .tabpanel img {
-          margin: 10px auto; }
+          margin: 2.7777777778vw auto; }
         .how_reg .inner #howregTab .tabpanel.active {
           display: block; }
+
+.by_reg {
+  padding: 30.5555555556vw 0 27.7777777778vw; }
+  .by_reg h3 {
+    text-align: center;
+    position: relative;
+    z-index: 1; }
+  .by_reg img {
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    position: absolute;
+    top: 20.83333333333333vw;
+    left: -3.055555555555556vw;
+    width: 44.44444444444444vw;
+    height: 21.66666666666667vw;
+    opacity: 0.9; }
+  .by_reg .byreg_slide {
+    margin-top: 13.8888888889vw; }
+    .by_reg .byreg_slide .swiper-wrapper .swiper-slide strong {
+      font-size: 4.4444444444vw; }
+    .by_reg .byreg_slide .swiper-wrapper .swiper-slide .by_txt span {
+      font-family: aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif; }
+
+.regbtn_area {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  height: 53.61111111111111vw;
+  background: url("../images/sub/regdonation_under_bgx1.jpg") no-repeat center;
+  color: #fff;
+  text-align: center;
+  padding-top: 17.22222222222222vw;
+  font-size: 3.8888888889vw; }
+  .regbtn_area p {
+    margin-bottom: 5.5555555556vw; }
+
+/* 정기후원 - 사용자 정보 입력 페이지 */
+#regForm {
+  padding-bottom: 11.1111111111vw; }
+
+#regForm img {
+  width: 4.1666666667vw;
+  height: 4.1666666667vw; }
+
+#regForm .don_btn {
+  background: #3d1322;
+  color: #ffffff; }
+
+#regForm .inner legend {
+  display: block;
+  width: 100%;
+  padding-bottom: 1.944444444444444vw;
+  border-bottom: 0.5555555555555556vw solid #000;
+  font-size: 5.5555555556vw;
+  margin-right: -8.3333333333vw; }
+
+.fz16 {
+  font-size: 3.8888888889vw; }
+
+.ml14 {
+  margin-left: 3.8888888889vw; }
+
+.reg_now {
+  margin-bottom: 18.05555555555556vw; }
+  .reg_now ul {
+    padding-top: 20.83333333333333vw; }
+    .reg_now ul li {
+      float: left;
+      font-size: 4.4444444444vw;
+      text-align: center;
+      position: relative; }
+      .reg_now ul li + li {
+        margin-left: 5.5555555556vw; }
+      .reg_now ul li:last-of-type {
+        margin-left: 11.1111111111vw; }
+      .reg_now ul li span {
+        font-size: 3.8888888889vw; }
+      .reg_now ul li::before {
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        position: absolute;
+        top: -11.1111111111vw;
+        left: 50%;
+        content: "";
+        width: 8.3333333333vw;
+        height: 8.3333333333vw;
+        border: 0.5555555555555556vw solid #000;
+        background: transparent; }
+      .reg_now ul li:nth-of-type(1)::after {
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        content: "";
+        position: absolute;
+        top: -8.611111111111111vw;
+        left: 50%;
+        width: 4.1666666667vw;
+        height: 4.1666666667vw;
+        background: #3d1322; }
+      .reg_now ul li:nth-of-type(n+2)::after {
+        content: "";
+        position: absolute;
+        top: -6.6666666667vw;
+        height: 0.5555555555555556vw;
+        background: #000; }
+      .reg_now ul li:nth-of-type(2)::after {
+        width: 22.2222222222vw;
+        left: -13.8888888889vw; }
+      .reg_now ul li:nth-of-type(3)::after {
+        width: 21.66666666666667vw;
+        left: -19.4444444444vw; }
+
+.reg_select {
+  width: 100%;
+  height: 33.33333333333333vw; }
+  .reg_select legend {
+    margin-bottom: 5.5555555556vw; }
+  .reg_select #regSelect, .reg_select option {
+    width: 44.44444444444444vw;
+    height: 9.7222222222vw;
+    font-weight: 600; }
+
+.enter_info {
+  padding-top: 2.7777777778vw;
+  font-weight: 600; }
+  .enter_info input, .enter_info select {
+    height: 6.9444444444vw;
+    margin-top: 1.944444444444444vw; }
+  .enter_info .essential img {
+    float: left; }
+  .enter_info ul {
+    margin-top: 8.3333333333vw; }
+    .enter_info ul li + li {
+      margin-top: 5.5555555556vw; }
+    .enter_info ul li #uname {
+      width: 45.55555555555556vw; }
+    .enter_info ul li #frontResident {
+      width: 33.33333333333333vw; }
+    .enter_info ul li #backResident {
+      width: 36.11111111111111vw; }
+    .enter_info ul li p {
+      margin-top: 1.944444444444444vw; }
+    .enter_info ul li #firstPhoneNum, .enter_info ul li #middlePhoneNumber, .enter_info ul li #lastPhoneNumber {
+      width: 19.4444444444vw;
+      margin: 0 1.944444444444444vw; }
+    .enter_info ul li #firstPhoneNum {
+      margin-left: 3.8888888889vw !important; }
+    .enter_info ul li #emailFront {
+      width: 30.55555555555556vw;
+      margin-right: 2.222222222222222vw; }
+    .enter_info ul li #emailBack {
+      width: 33.33333333333333vw;
+      margin-left: 2.222222222222222vw; }
+    .enter_info ul li:last-of-type div span {
+      margin-left: 3.8888888889vw;
+      font-size: 3.8888888889vw; }
+    .enter_info ul li #emailBackSel {
+      width: 34.72222222222222vw;
+      height: 8.888888888888889vw;
+      margin-left: 44.44444444444444vw; }
+
+.reception_agree {
+  margin-top: 11.1111111111vw; }
+  .reception_agree strong {
+    display: block;
+    font-family: Score4,"맑은 고딕","Malgun Gothic",sans-serif !important;
+    font-size: 3.8888888889vw;
+    margin: 5.5555555556vw 0 1.1111111111vw; }
+  .reception_agree label {
+    font-weight: 600; }
+
+.info_collect {
+  margin-top: 11.1111111111vw;
+  font-weight: 600; }
+  .info_collect legend {
+    margin-bottom: 4.1666666667vw; }
+  .info_collect ul {
+    border: 0.5555555555555556vw solid #000;
+    margin: 2.7777777778vw 0 8.3333333333vw; }
+    .info_collect ul li {
+      padding: 2.7777777778vw 1.3888888889vw;
+      line-height: 5.5555555556vw; }
+      .info_collect ul li + li {
+        border-top: 0.2777777778vw solid #000; }
+      .info_collect ul li::after {
+        content: "";
+        display: block;
+        clear: both; }
+      .info_collect ul li > * {
+        float: left; }
+      .info_collect ul li > a {
+        float: right;
+        margin-right: 1.3888888889vw; }
+
+@media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (-webkit-min-device-pixel-ratio: 2) {
+  .sub_tit.reg_tit {
+    background-image: url("../images/sub/reg_donation_tit_bgx2.jpg"); }
+
+  .regbtn_area {
+    background-image: url("../images/sub/regdonation_under_bgx2.jpg"); } }
+@media screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (-webkit-min-device-pixel-ratio: 3) {
+  .sub_tit.reg_tit {
+    background-image: url("../images/sub/reg_donation_tit_bgx3.jpg"); }
+
+  .regbtn_area {
+    background-image: url("../images/sub/regdonation_under_bgx3.jpg"); } }
 
 /*# sourceMappingURL=sub.css.map */

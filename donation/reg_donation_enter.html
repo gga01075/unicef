@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 후원자정보입력 : 정기후원 : donation </title>
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/sub.css">
+    <script src="../assets/js/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/sub.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- #header -->
+        <header id="header">
+            <h1 class="logo">
+                <a href="../index.html"><img src="../assets/images/common/unicef_logo.svg" alt="유니세프"></a>
+            </h1>
+            <button class="btn_menu">
+                <span class="blind_b">메뉴 열기</span>
+                <span class="line top"></span>
+                <span class="line mid"></span>
+                <span class="line btm"></span>
+            </button>
+            <nav id="gnb">
+                <button class="depth2_now">
+                    <img src="../assets/images/common/gnb-back-arrow.svg" alt="">
+                    <span>about us</span>
+                </button>
+                <ul>
+                    <li>
+                        <a href="#">about us</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="" class="has_arrow">유니세프 소개</a>
+                                <ul>
+                                    <li><a href="">설립이념</a></li>
+                                    <li><a href="">역사</a></li>
+                                    <li><a href="">조직</a></li>
+                                    <li><a href="">채용</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="" class="has_arrow">유니세프 소식</a>
+                                <ul>
+                                    <li><a href="">공지사항</a></li>
+                                    <li><a href="">뉴스</a></li>
+                                    <li><a href="">스토리</a></li>
+                                    <li><a href="">보도자료</a></li>
+                                    <li><a href="">유니세프 자료</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">홍보대사</a></li>
+                            <li><a href="">나눔기업</a></li>
+                            <li><a href="">지부안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./reg_donation.html">donation</a>
+                        <ul class="depth2">
+                            <li><a href="./reg_donation.html">정기후원</a></li>
+                            <li><a href="">일시후원</a></li>
+                            <li><a href="">기업후원</a></li>
+                            <li><a href="">생명을 구하는 선물</a></li>
+                            <li><a href="">고액 아너스 클럽</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">work</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="" class="has_arrow">유니세프 사업</a>
+                                <ul>
+                                    <li><a href="">유니세프 중점 사업</a></li>
+                                    <li><a href="">유니세프 범분야 사업</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="" class="has_arrow">한국 위원회 사업</a>
+                                <ul>
+                                    <li><a href="">기금 모금</a></li>
+                                    <li><a href="">아동권리 옹호</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="" class="has_arrow">한국 정부 협력 사업</a>
+                                <ul>
+                                    <li><a href="">한국정부 파트너십</a></li>
+                                    <li><a href="">아동권리 옹호</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">유니세프 이슈</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">campaign</a>
+                        <ul class="depth2">
+                            <li><a href="">후원자 참여</a></li>
+                            <li><a href="">착한 상품</a></li>
+                            <li><a href="">자원봉사</a></li>
+                            <li><a href="">아우인형</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">communication</a>
+                        <ul class="depth2">
+                            <li><a href="">도움 요청</a></li>
+                            <li><a href="">궁금증 확인하세요</a></li>
+                            <li><a href="">마음 톡톡</a></li>
+                            <li><a href="">이벤트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- #container -->
+        <section id="container" role="main">
+            <div class="sub_tit reg_tit p_r">
+                <div class="subtit_txt p_a">
+                    <h2>정기후원</h2>
+                    <p>어린이의 생명을 살리는
+                        아름다운 약속</p>
+                </div>
+            </div>
+            <div class="reg_now font2" aria-label="정기후원 단계">
+                <div class="inner">
+                    <ul class="clearfix">
+                        <!-- aria-current를 통해 3단계중에 현재 페이지임을 알려준다. -->
+                        <li aria-current="page">STEP1<br><span>후원자 정보입력</span></li>
+                        <li>STEP2<br><span>후원자 납입방법</span></li>
+                        <li>STEP3<br><span>후원완료</span></li>
+                    </ul>
+                </div>
+            </div>
+            <form action="" method="POST" id="regForm">
+                <div class="inner">
+                    <fieldset class="reg_select">
+                        <legend>정기후원 선택</legend>
+                        <select name="regSelect" id="regSelect">
+                            <option value="세계 어린이 돕기">세계 어린이 돕기</option>
+                            <option value="난민 어린이 돕기">난민 어린이 돕기</option>
+                            <option value="에이즈 감염 어린이 돕기">에이즈 감염 어린이 돕기</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="enter_info">
+                        <legend>후원자 정보 입력</legend>
+                        <div class="essential">
+                            <img src="../assets/images/sub/check.svg" alt="필수항목">
+                            <p>표시는 반드시 입력해야 하는 항목입니다.</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="fz16">
+                                    <img src="../assets/images/sub/check.svg" alt="체크">
+                                    <label for="uname">성명</label>
+                                </div>
+                                <input type="text" id="uname" class="ml14" name="uname" maxlength="10">
+                            </li>
+                            <li>
+                                <div class="fz16">
+                                    <img src="../assets/images/sub/check.svg" alt="체크"><span>주민등록번호</span>
+                                </div>
+                                <input type="password" id="frontResident"  class="ml14" name="frontResident" maxlength="6" title="주민번호 앞 6자리"> -
+                                <input type="password" id="backResident" name="backResident" maxlength="7" title="주민번호 뒤 7자리">
+                                <p>*후원자 관리와 기부내역 국세청 기부내역 신고(연말정산 소득공제)를 위한 항목입니다.</p>
+                            </li>
+                            <li>
+                                <div class="fz16">
+                                    <img src="../assets/images/sub/check.svg" alt="체크"><span>휴대폰 번호</span>
+                                </div>
+                                <select name="firstPhoneNum" id="firstPhoneNum" class="ml14" title="휴대폰 앞 4자리">
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                    <option value="017">017</option>
+                                    <option value="070">070</option>
+                                </select>
+                                - <input type="text" id="middlePhoneNumber" name="middlePhoneNumber" title="휴대폰 중간 4자리" maxlength="4">
+                                - <input type="text" id="lastPhoneNumber" name="lastPhoneNumber" title="휴대폰 뒤4자리" maxlength="4">
+                            </li>
+                            <li>
+                                <div>
+                                    <span>이메일주소</span>
+                                </div>
+                                <input type="text" id="emailFront" class="ml14" name="emailFront" title="이메일 앞">@
+                                <input type="text" id="emailBack" name="emailBack" title="이메일 뒤">
+                                <select name="emailBackSel" id="emailBackSel">
+                                    <option value="1">직접입력</option>
+                                    <option value="dreamwiz.com">dreamwiz.com</option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="hanmail.net">hanmail.net</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="empal.com">empal.com</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="reception_agree">
+                        <legend>수신동의[선택]</legend>
+                        <ul>
+                            <li>
+                                <strong class="fz16">1.소식지</strong>
+                                <input type="radio" name="newsletter" value="우편" id="acceptPost"><label
+                                    for="post">우편</label>
+                                <input type="radio" name="newsletter" value="이메일" id="acceptEmail"><label for="">이메일</label>
+                                <input type="radio" name="newsletter" value="모두 수신" id="acceptAll"><label for="">모두
+                                    수신</label>
+                                <input type="radio" name="newsletter" value="모두 거부" id="rejectAll"><label for="">모두
+                                    거부</label>
+                            </li>
+                            <li>
+                                <strong>2.SMS수신</strong>
+                                <input type="radio" name="newsletter" value="우편" id="acceptPost"><label
+                                    for="post">수신</label>
+                                <input type="radio" name="newsletter" value="이메일" id="acceptEmail"><label for="">거부</label>
+                            </li>
+                            <li>
+                                <strong>3.제휴후원광고</strong>
+                                <input type="radio" name="newsletter" value="우편" id="acceptPost"><label
+                                    for="post">수신</label>
+                                <input type="radio" name="newsletter" value="이메일" id="acceptEmail"><label for="">거부</label>
+                                <p> *위의 광고성 정보 수신동의를 거부할 권리가 있으나, 동의를 거부할 경우 다양한 제휴후원
+                                    광고를 받으실 수 없습니다.</p>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="info_collect">
+                        <legend>약관 및 개인정보 수집 ∙ 이용 동의</legend>
+                        <input type="checkbox" name="collectAgree" id="collectAgree">
+                        <label for="collectAgree">약관에 모두 동의합니다.</label>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="agree" value="후원 약관 동의[필수]" id="clause">
+                                <p>후원 약관 동의[필수]</p>
+                                <a href="#">상세보기+</a>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="agree" value="개인정보 수집-이용 동의[필수]" id="personalInfo">
+                                <p>개인정보 수집-이용 동의[필수]</p>
+                                <a href="#">상세보기+</a>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <a href="#" class="don_btn reg_btn">다음 단계</a>
+            </form>
+        </section>
+        <!-- #footer -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="btm_list">
+                    <ul>
+                        <li><a href="#">유니세프 소개</a></li>
+                        <li><a href="#">저작권 안내</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">연락처</a></li>
+                    </ul>
+                </div>
+                <div class="company_info">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>단체명 : </dt>
+                                <dd>사단법인 유니세프한국위원회 <br>(고유번호: 102-82-07606)</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>주소 : </dt>
+                                <dd>[04099] 서울시 마포구 서강로 60(창전동) </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>대표자 : </dt>
+                                <dd>송상현</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <p>COPYRIGHT @ THE KOREAN COMMITTEE <br> FOR UNICEF. ALL RIGHT RESERVED</p>
+            </div>
+            <a href="" id="topBtn">
+                <span>TOP</span>
+                <img src="../assets/images/common/right-arrow.svg" alt="">
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>

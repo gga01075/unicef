@@ -12,7 +12,7 @@
   src: url("../fonts/a고딕17.eot");
   src: url("../fonts/a고딕17.eot#iefix") format("embedded-opentype"), url("../fonts/a고딕17.woff2") format("woff2"), url("../fonts/KoreanGD17-R.woff") format("woff"), url("../fonts/a고딕17.ttf") format("truetype"); }
 /* tag reset */
-body, h1, h2, h3, h4, h5, p, ul, li, dl, dt, dd, th, td, figure, form, button {
+body, h1, h2, h3, h4, h5, p, ul, li, dl, dt, dd, th, td, figure, form, button, fieldset {
   margin: 0;
   padding: 0; }
 
@@ -109,18 +109,18 @@ caption {
   font-weight: 700; }
 
 .inner {
-  padding-left: 30px;
-  padding-right: 30px; }
+  padding-left: 8.3333333333vw;
+  padding-right: 8.3333333333vw; }
 
 body {
   font-family: Score4,"맑은 고딕","Malgun Gothic",sans-serif;
-  font-size: 12px;
+  font-size: 3.3333333333vw;
   font-weight: 400;
   word-break: keep-all;
   color: #fff; }
 
 #wrap {
-  min-width: 320px;
+  min-width: 88.88888888888889vw;
   overflow: hidden; }
 
 /* #header */
@@ -130,94 +130,94 @@ body {
   left: 0;
   z-index: 999;
   width: 100%;
-  height: 60px;
+  height: 16.6666666667vw;
   background: #fff; }
   #header .logo a {
     position: absolute;
-    top: 10px;
-    left: 16px;
+    top: 2.7777777778vw;
+    left: 4.4444444444vw;
     z-index: 1000; }
     #header .logo a img {
-      width: 50px;
-      height: 40px; }
+      width: 13.8888888889vw;
+      height: 11.1111111111vw; }
 
 #gnb {
   display: none;
   position: fixed;
-  top: 60px;
+  top: 16.6666666667vw;
   left: 100%;
-  z-index: 999;
+  z-index: 1200;
   width: 100%;
-  height: calc(100% - 60px);
+  height: calc(100% - 16.66666666666667vw);
   background: #badbd1;
   color: #000;
   overflow-y: auto; }
   #gnb .depth2_now {
     display: none;
     position: absolute;
-    top: 20px;
-    left: 25px;
-    width: 260px;
-    height: 30px; }
+    top: 5.5555555556vw;
+    left: 6.944444444444444vw;
+    width: 72.22222222222222vw;
+    height: 8.3333333333vw; }
     #gnb .depth2_now::before {
       -webkit-border-radius: 50%;
       border-radius: 50%;
       content: "";
       position: absolute;
-      top: 6px;
-      left: -3px;
-      width: 28px;
-      height: 28px;
+      top: 1.666666666666667vw;
+      left: -1vw;
+      width: 7.777777777777778vw;
+      height: 7.777777777777778vw;
       background: #efede6; }
     #gnb .depth2_now::after {
       content: "";
       display: block;
       clear: both; }
     #gnb .depth2_now img {
-      width: 40px;
-      height: 40px;
+      width: 11.1111111111vw;
+      height: 11.1111111111vw;
       float: left;
       position: relative;
       z-index: 1; }
     #gnb .depth2_now span {
       float: left;
       font-family: aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;
-      font-size: 30px;
-      margin-left: 4px; }
+      font-size: 8.3333333333vw;
+      margin-left: 1.111111111111111vw; }
   #gnb a {
     display: block; }
   #gnb > ul {
-    padding-top: 120px;
-    padding-left: 75px;
+    padding-top: 33.33333333333333vw;
+    padding-left: 20.83333333333333vw;
     font-family: aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;
-    font-size: 30px; }
+    font-size: 8.3333333333vw; }
     #gnb > ul > li + li {
-      margin-top: 40px; }
+      margin-top: 11.1111111111vw; }
     #gnb > ul > li > a {
       position: relative;
-      height: 30px;
-      line-height: 30px; }
+      height: 8.3333333333vw;
+      line-height: 8.3333333333vw; }
       #gnb > ul > li > a::before {
         content: "";
         position: absolute;
-        bottom: -5px;
-        left: 20px;
-        width: calc(100% - 20px);
-        height: 2px;
+        bottom: -1.388888888888889vw;
+        left: 5.5555555556vw;
+        width: calc(100% - 5.555555555555556vw);
+        height: 0.5555555555555556vw;
         background: #3d1322; }
       #gnb > ul > li > a::after {
         content: "";
         position: absolute;
-        bottom: 10px;
-        right: 10px;
+        bottom: 2.7777777778vw;
+        right: 2.7777777778vw;
         display: inline-block;
-        width: 25px;
-        height: 16px;
+        width: 6.944444444444444vw;
+        height: 4.4444444444vw;
         background: url("../images/common/gnb_arrow.svg") no-repeat center; }
   #gnb .depth2 {
     display: none;
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 16.6666666667vw;
     left: 0; }
     #gnb .depth2, #gnb .depth2 > li > a::before, #gnb .depth2 > li > a::after {
       -webkit-transition: all 0.5s;
@@ -225,20 +225,20 @@ body {
       -o-transition: all 0.5s;
       transition: all 0.5s; }
     #gnb .depth2 > li + li {
-      margin-top: 40px; }
+      margin-top: 11.1111111111vw; }
     #gnb .depth2 > li > a {
-      font-size: 18px;
+      font-size: 5vw;
       position: relative;
-      height: 30px;
-      line-height: 30px;
-      padding-left: 20px; }
+      height: 8.3333333333vw;
+      line-height: 8.3333333333vw;
+      padding-left: 5.5555555556vw; }
       #gnb .depth2 > li > a::before {
         content: "";
         position: absolute;
-        bottom: -5px;
-        left: 20px;
+        bottom: -1.388888888888889vw;
+        left: 5.5555555556vw;
         width: 100%;
-        height: 2px;
+        height: 0.5555555555555556vw;
         background: #3d1322; }
       #gnb .depth2 > li > a.has_arrow::after {
         -webkit-transition: 0.5s;
@@ -247,21 +247,21 @@ body {
         transition: 0.5s;
         content: "";
         position: absolute;
-        bottom: 10px;
-        right: 10px;
+        bottom: 2.7777777778vw;
+        right: 2.7777777778vw;
         display: inline-block;
-        width: 25px;
-        height: 16px;
+        width: 6.944444444444444vw;
+        height: 4.4444444444vw;
         background: url("../images/common/gnb_arrow.svg") no-repeat center; }
     #gnb .depth2 > li > ul {
       display: none;
-      padding: 15px 0 0 40px; }
+      padding: 4.1666666667vw 0 0 11.1111111111vw; }
       #gnb .depth2 > li > ul > li > a {
-        font-size: 16px;
-        height: 40px;
-        line-height: 40px; }
+        font-size: 4.4444444444vw;
+        height: 11.1111111111vw;
+        line-height: 11.1111111111vw; }
     #gnb .depth2.on li a::before {
-      left: -5px; }
+      left: -1.388888888888889vw; }
     #gnb .depth2.on li a::after {
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg); }
@@ -270,10 +270,10 @@ body {
       transform: rotate(-90deg); }
 
 .btn_menu {
-  top: 16px;
-  right: 20px;
-  width: 29px;
-  height: 24px;
+  top: 4.4444444444vw;
+  right: 5.5555555556vw;
+  width: 8.055555555555556vw;
+  height: 6.666666666666667vw;
   z-index: 1100;
   overflow: hidden; }
   .btn_menu, .btn_menu .line {
@@ -283,59 +283,60 @@ body {
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
-    height: 4px;
+    height: 1.111111111111111vw;
     width: 100%;
     background: #000;
     left: 0;
-    -webkit-border-radius: 8px;
-    border-radius: 8px; }
+    -webkit-border-radius: 2.2222222222vw;
+    border-radius: 2.2222222222vw; }
   .btn_menu .top {
     top: 0; }
   .btn_menu .mid {
-    top: 10px; }
+    top: 2.7777777778vw; }
   .btn_menu .btm {
-    top: 20px; }
+    top: 5.5555555556vw; }
   .btn_menu.active .line {
     background: #000 !important; }
   .btn_menu.active .top {
-    top: 10px;
+    top: 2.7777777778vw;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
   .btn_menu.active .mid {
-    left: 29px; }
+    left: 8.055555555555556vw; }
   .btn_menu.active .btm {
-    top: 10px;
+    top: 2.7777777778vw;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
 
 /* #footer */
 #footer {
   position: relative;
+  z-index: 900;
   background: #ddd;
   color: #000;
-  padding: 40px 0 70px;
+  padding: 11.1111111111vw 0 19.4444444444vw;
   text-align: center;
   font-weight: 600; }
   #footer .btm_list ul {
     border-bottom: 1px solid #000;
-    padding-bottom: 20px; }
+    padding-bottom: 5.5555555556vw; }
     #footer .btm_list ul::after {
       content: "";
       display: block;
       clear: both; }
     #footer .btm_list ul li {
       float: left;
-      width: 96px; }
+      width: 26.66666666666667vw; }
       #footer .btm_list ul li + li {
-        margin-left: 5px; }
+        margin-left: 1.388888888888889vw; }
       #footer .btm_list ul li:nth-of-type(3n+1) {
         margin-left: 0; }
       #footer .btm_list ul li:nth-of-type(n+4) {
-        margin-top: 20px; }
+        margin-top: 5.5555555556vw; }
   #footer .company_info {
-    margin-top: 20px; }
+    margin-top: 5.5555555556vw; }
     #footer .company_info li {
-      margin-bottom: 20px; }
+      margin-bottom: 5.5555555556vw; }
       #footer .company_info li dl {
         display: inline-block;
         margin: 0 auto; }
@@ -349,47 +350,52 @@ body {
           float: left; }
   #footer #topBtn {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    text-indent: 7px; }
+    bottom: 5.5555555556vw;
+    right: 5.5555555556vw;
+    text-indent: 1.944444444444444vw; }
     #footer #topBtn::after {
       -webkit-border-radius: 50%;
       border-radius: 50%;
       background: #aaa;
       content: "";
       position: absolute;
-      right: 5px;
-      top: -5px;
+      right: 1.3888888889vw;
+      top: -1.3888888889vw;
       z-index: 1;
-      width: 27px;
-      height: 27px; }
+      width: 7.5vw;
+      height: 7.5vw; }
     #footer #topBtn img {
       -webkit-transform: rotate(-90deg);
       transform: rotate(-90deg);
-      width: 40px;
-      height: 30px;
+      width: 11.1111111111vw;
+      height: 8.3333333333vw;
       position: relative;
       z-index: 2; }
 
 /* 모든 페이지 공통 */
 #container {
   position: relative;
-  padding-top: 60px; }
+  z-index: 900;
+  padding-top: 16.6666666667vw; }
 
 #container h2, #container h3 {
-  font-size: 24px; }
+  font-size: 6.666666666666667vw; }
 
-#container h3, #container strong, #container dl dt {
+#container h3, #container strong, #container dl dt, #container legend {
   font-family: aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif; }
 
 #container .don_btn {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 2.7777777778vw;
+  border-radius: 2.7777777778vw;
   display: inline-block;
   text-align: center;
-  width: 100px;
-  height: 35px;
-  line-height: 35px;
+  width: 27.7777777778vw;
+  height: 9.722222222222222vw;
+  line-height: 9.722222222222222vw;
   font-weight: 600; }
+
+@media screen and (max-width: 320px) {
+  .inner {
+    padding: 0 2.7777777778vw; } }
 
 /*# sourceMappingURL=common.css.map */

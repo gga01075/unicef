@@ -3,13 +3,14 @@
 
 /* 서브페이지 공통 */
 .sub_tit{
-    height: 208px;background: no-repeat center;color: #fff;
+    height: 57.77777777777778vw;background: no-repeat center;color: #fff;
     .subtit_txt{
-    top: 80px;right: 30px;width: 240px;height: 110px; text-align: right;
-      p{margin: 5px 0 15px;}
+    top: $vw80;right: $vw30;width: 66.66666666666667vw;height: 30.55555555555556vw; text-align: right;
+      p{margin: $vw5 0 $vw15;}
       a{}
     }
     &.reg_tit{
+        @include bgsize(cover);
         background-image: url("../images/sub/reg_donation_tit_bgx1.jpg");
     }
 }
@@ -25,31 +26,31 @@
 }
 
 .why_reg{
-    background: $secondColor;padding: 110px 0 180px;
+    background: $secondColor;padding: 30.55555555555556vw 0 50vw;
     .inner{
-        h3{text-align: center;margin-bottom: 30px;position: relative;z-index: 1;}
+        h3{text-align: center;margin-bottom: $vw30;position: relative;z-index: 1;}
         >img{
             @include transform(rotate(-28deg));
-            position: absolute;top: 60px;left: 10px;
-            width: 164px;height: 70px;opacity: 0.6;
+            position: absolute;top: $vw60;left: $vw10;
+            width: 45.55555555555556vw;height: $vw70;opacity: 0.6;
         }
       .swiper-wrapper{
         .swiper-slide{
-            position: relative;height: 500px;padding-top: 50px;
-            & img{margin: 0 20px;border: 2px solid #fff;}
+            position: relative;height: 138.8888888888889vw;padding-top: $vw50;
+            & img{margin: 0 $vw20;border: 0.5555555555555556vw solid #fff;}
             &.slide1 img{
                 @include transform(rotate(10deg));
-                width:240px;height: 184px;} 
+                width:66.66666666666667vw;height: 51.11111111111111vw;} 
             &.slide2 img{
                 @include transform(rotate(30deg));
-                width:216px;height: 140px;} 
+                width:60vw;height: 38.88888888888889vw;} 
             &.slide3 img{
                 @include transform(rotate(-10deg));
-                width:260px;height: 170px;} 
+                width:72.22222222222222vw;height: 47.22222222222222vw;} 
             .why_txt{
-                position: absolute;top: 285px;left: 0;z-index: 100;width: 100%;opacity: 0;
-                strong{font-size: 16px;display: block;text-align: left;}
-                p{margin-top: 20px;font-weight: 600;}
+                position: absolute;top: 79.16666666666667vw;left: 0;z-index: 100;width: 100%;opacity: 0;
+                strong{font-size: $vw16;display: block;text-align: left;}
+                p{margin-top: $vw20;font-weight: 600;}
             }
           &.swiper-slide-active{
             .why_txt{opacity: 1;}
@@ -58,74 +59,210 @@
       }
       .swiper-pagination{
         
-        &.swiper-pagination-fraction{top: 74%;bottom: 0;}
+        &.swiper-pagination-fraction{top: 74%;bottom: 0;font-weight: 600;}
         
-        .swiper-pagination-current{font-size: 30px;font-family:aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;}
+        .swiper-pagination-current{font-size: $vw30;font-family:aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;}
         .swiper-pagination-total{}
       }
 
       .prev_next{
-        &.swiper-button-prev.swiper-button-disabled, &.swiper-button-next.swiper-button-disabled{opacity: 1;}  
+        &.swiper-button-prev.swiper-button-disabled, &.swiper-button-next.swiper-button-disabled{opacity: 0.5;}  
+        &::after{display: none;}
         color: transparent;top: 77%;
-        &.swiper-button-prev{left: 35px;}
-        &.swiper-button-next{right: 15px;}
+        &.swiper-button-prev{left: $vw30;}
+        &.swiper-button-next{right: $vw30;}
         img{
-            width: 72px;height: 12px;
+            width: 20vw;height: $vw12;
         }
        }
     }
-
 }
 
 /* .how_reg */
 .how_reg{
-  background: $firstColor;height: 500px;color: #fff;padding-bottom: 120px;
+  background: $firstColor;height: 138.8888888888889vw;color: #fff;padding-bottom: 33.33333333333333vw;
   .how_bg{
     @include transform(rotate(-25deg));
-    position: relative;top: -200px;left: -100px;
-    width: 200%;height: 250px;background: $firstColor;
+    position: relative;top: -55.55555555555556vw;left: -$vw100;
+    width: 200%;height: 69.44444444444444vw;background: $firstColor;
   }
   .inner{
-    position: relative;top: -340px;
-    padding-top: 180px;
+    position: relative;top: -94.44444444444444vw;
+    padding-top: 50vw;
     >h3{
       text-align: center;
-      color: #d6cece;
+      color: #d6cece;margin-bottom: $vw20;
       span{color: #ffffff;}
     }
-    >img{position: absolute;top: -95px;left:58px;height: 470px;}
+    >img{position: absolute;top: -26.38888888888889vw;left:16.11111111111111vw;height: 130.5555555555556vw;}
     #howregTab{
-      width: 100%;margin: 30px -30px 0 0;
-      .tablist{
-        white-space: nowrap;height: 30px;margin-bottom: 20px; overflow:auto;
-        .tab{
-          display: inline-block;z-index: 100;font-size: 16px;font-family:aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;
-          +.tab{margin-left: 55px;}
+      width: 100%;margin: $vw30 -$vw30 0 0;position: relative;z-index: 10;
+      .tabbtn_wrap{
+        overflow-y: auto;
+        .tablist{
+          width: 138.8888888888889vw;white-space: nowrap;height: $vw30;margin-bottom: $vw20; 
+          .tab{
+            position: relative;display: inline-block;z-index: 100;font-size: $vw16;font-family:aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;
+            +.tab{margin-left: 15.27777777777778vw;}
+            &::after{
+              @include transform(scaleX(0));@include transition(transform 0.2s);
+              content:"";position: absolute;bottom: -$vw5;left: 0;z-index: 1;width: 100%;height:0.5555555555555556vw;background: $lastColor;}
+            &.active::after{@include transform(scaleX(1));}
+          }
         }
       }
       .tabpanel{
-            display: none;color: #000;font-size: 12px;
+            display: none;color: #000;font-size: $vw12;
             @include border-box();
-            @include radius(10px);
-            width: 100%;height: 350px;padding: 23px 29px 0 29px;background: #fff;
+            @include radius($vw10);
+            width: 100%;height: 97.22222222222222vw;padding: 6.388888888888889vw 8.055555555555556vw 0 8.055555555555556vw;background: #fff;
             .reg_money{
                text-align: center;font-weight: 600;
-               font-size: 16px;
-               span{font-family:aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;font-size: 18px;display: inline-block;padding: 3px 10px;border: 3px solid #000;font-weight: 700;}       
+               font-size: $vw16;
+               span{font-family:aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;font-size: $vw18;display: inline-block;padding: 0.8333333333333333vw $vw10;border: 0.8333333333333333vw solid #000;font-weight: 700;}       
             }
-            p:last-of-type{margin-top: 20px;padding: 0 10px;font-weight: 600;}
-            img{margin:10px auto;}
+            p:last-of-type{margin-top: $vw20;padding: 0 $vw10;font-weight: 600;}
+            img{margin:$vw10 auto;}
 
           &.active{
             display: block;
           }
         }
     }
-
-  
   }
+}
 
 
+.by_reg{
+  padding: 30.55555555555556vw 0 $vw100;
+  h3{text-align: center;position: relative;z-index: 1;}
+  img{
+    @include transform(rotate(-25deg));
+    position: absolute;top: 20.83333333333333vw;left: -3.055555555555556vw;width: 44.44444444444444vw;height: 21.66666666666667vw;opacity: 0.9;
+  }
+  .byreg_slide{
+    margin-top: $vw50;
+    .swiper-wrapper{
+      .swiper-slide{
+          strong{font-size: $vw16;}
+          .by_txt{
+            span{font-family:aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;}
+          }
 
+      }
+    }
+  }
+}
+
+.regbtn_area{
+  @include border-box(); @include bgsize(cover);
+  height: 53.61111111111111vw;background: url("../images/sub/regdonation_under_bgx1.jpg") no-repeat center;color: #fff;text-align: center;padding-top: 17.22222222222222vw;font-size: $vw14;
+  p{margin-bottom: $vw20;}
 
 }
+
+
+
+
+
+/* 정기후원 - 사용자 정보 입력 페이지 */
+
+// 정기후원 사용자입력페이지 공통스타일 
+#regForm{padding-bottom: $vw40;}
+#regForm img{width: $vw15;height: $vw15;}
+#regForm .don_btn{background: $firstColor;color: #ffffff;}
+#regForm .inner legend{display: block;width: 100%;padding-bottom: 1.944444444444444vw;border-bottom: 0.5555555555555556vw solid #000;font-size: $vw20;margin-right: -$vw30;}
+.fz16{font-size: $vw14;}
+.ml14{margin-left: $vw14;}
+
+.reg_now{
+  margin-bottom: 18.05555555555556vw;
+  ul{
+    padding-top: 20.83333333333333vw;
+    li{float: left;font-size: $vw16;text-align: center;position: relative;
+      +li{margin-left: $vw20;}
+      &:last-of-type{margin-left: $vw40;}
+      span{font-size: $vw14;}
+       &::before{
+        @include radius(50%);@include transform(translateX(-50%));
+        position: absolute;top: -$vw40;left: 50%;
+        content:"";width: $vw30;height: $vw30;border: 0.5555555555555556vw solid #000;background: transparent;}
+      &:nth-of-type(1)::after{
+        @include radius(50%);@include transform(translateX(-50%));
+        content:"";position: absolute;top: -8.611111111111111vw;left: 50%;width: $vw15;height: $vw15;background: $firstColor;}
+      &:nth-of-type(n+2)::after{content:"";position: absolute;top:-$vw24;height: 0.5555555555555556vw;background: #000;}
+      &:nth-of-type(2)::after{width: $vw80;left:-$vw50;}
+      &:nth-of-type(3)::after{width: 21.66666666666667vw;left:-$vw70;}
+    }
+  }
+}
+
+.reg_select{
+    width: 100%;height: 33.33333333333333vw;
+    legend{margin-bottom: $vw20;}
+    #regSelect,option{width: 44.44444444444444vw;height: $vw35;font-weight: 600;}
+}
+
+.enter_info{
+  padding-top: $vw10;font-weight: 600;
+  input,select{height: $vw25;margin-top: 1.944444444444444vw;}
+  .essential{
+    img{float: left;}
+  }
+  ul{
+    margin-top: $vw30;
+    li{
+      +li{margin-top: $vw20;}
+      #uname{width: 45.55555555555556vw;}
+      #frontResident{width: 33.33333333333333vw;}
+      #backResident{width: 36.11111111111111vw;}
+      p{margin-top: 1.944444444444444vw;}
+      #firstPhoneNum,#middlePhoneNumber,#lastPhoneNumber{width: $vw70;margin: 0 1.944444444444444vw;}
+      #firstPhoneNum{margin-left: $vw14 !important;}
+      #emailFront{width: 30.55555555555556vw;margin-right: 2.222222222222222vw;}
+      #emailBack{width: 33.33333333333333vw;margin-left: 2.222222222222222vw;}
+      &:last-of-type div span{margin-left: $vw14;font-size: $vw14;}
+      #emailBackSel{width: 34.72222222222222vw;height: 8.888888888888889vw;margin-left: 44.44444444444444vw;}
+    }
+  }
+}
+
+.reception_agree{
+  margin-top: $vw40;
+  strong{display: block;font-family:Score4,"맑은 고딕","Malgun Gothic",sans-serif !important;font-size: $vw14;margin: $vw20 0 1.111111111111111vw;}
+  label{font-weight: 600;}
+}
+
+.info_collect{
+  margin-top: $vw40;font-weight: 600;
+  legend{margin-bottom: $vw15;}
+  ul{
+    border: 0.5555555555555556vw solid #000;margin: $vw10 0 $vw30;
+    li{
+      padding: $vw10 $vw5;line-height: $vw20;
+      +li{border-top: $vw1 solid #000;}
+      &::after{content:"";display: block;clear: both;}
+      >*{float: left;}
+      >a{float: right;margin-right: $vw5;}
+    }
+  }
+}
+
+
+@media 
+screen and (min-resolution: 192dpi), //안드로이드 
+screen and (min-resolution: 2dppx), //오페라 미니, ie
+screen and (-webkit-min-device-pixel-ratio: 2) //사파리 브라우저
+{
+  .sub_tit.reg_tit{background-image: url("../images/sub/reg_donation_tit_bgx2.jpg");}
+  .regbtn_area{background-image: url("../images/sub/regdonation_under_bgx2.jpg");}
+
+ }
+@media 
+screen and (min-resolution: 288dpi),
+screen and (min-resolution: 3dppx),
+screen and (-webkit-min-device-pixel-ratio: 3) 
+{
+  .sub_tit.reg_tit{background-image: url("../images/sub/reg_donation_tit_bgx3.jpg");}
+  .regbtn_area{background-image: url("../images/sub/regdonation_under_bgx3.jpg");}
+ }

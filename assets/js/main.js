@@ -21,9 +21,44 @@ $(document).ready(function () {
       el: '.swiper-pagination',
       type: 'fraction',
     },
-  
 
   });
+
+  /*  SLOGAN슬라이드 bullets 타입 생성 및 컨트롤 */
+  var menu = ['슬라이드1', '슬라이드2', '슬라이드3'];
+
+  for (var i = 1; i < menu.length + 1; i++) { //3
+    if (i === 1) {
+      // add active class if it is the first bullet
+      $('#bullets').append('<span class="swiper-pagination-bullet' + ' ' + 'swiper-pagination-bullet-active' +
+        ' ' + 'slide' + i + '" role="button" aria-label="' + menu[i - 1] + '"></span>');
+    } else {
+      $('#bullets').append('<span class="swiper-pagination-bullet' + ' ' + 'slide' + i + '"  role="button" aria-label="' + menu[i - 1] + '"></span>');
+    }
+  }
+
+  // fraction에 활성화 추가
+  var bullets = $('.swiper-pagination-bullet');
+
+
+  mySwiper1.on('slideChange', function () {
+    // 현재 슬라이드 가져오기
+    var slide = "slide" + ($('.swiper-pagination-current').text());
+
+    // 기존 슬라이더 클래스명 제거 후 활성화 bullet에 클래스명 추가하기
+    bullets.removeClass("swiper-pagination-bullet-active");
+    $.each(bullets, function (index, value) {
+      if ($(this).hasClass(slide)) {
+        $(this).addClass("swiper-pagination-bullet-active");
+        return false;
+      }
+    });
+
+
+  });
+
+
+
 
   //SLOGAN mask animation
   function maskAni() {

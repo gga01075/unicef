@@ -113,7 +113,7 @@
         strong{font-size: $vw16;}
         ul{
             margin-top: $vw20;
-            li{float: left;position: relative;width: 18.88888888888889vw;padding-top: 0px;
+            li{float: left;position: relative;width: 18.88888888888889vw;padding-top: 0px;opacity: 0;
                 &::before{
                   @include radius(50%);
                   content:"";position: absolute;top: 0;left: 0;width: 18.88888888888889vw;height: 18.88888888888889vw;background:$secondColor;}
@@ -179,15 +179,38 @@
     background: $firstColor url("../images/main/uchamp_bg2.svg") no-repeat; 
 
     h3 {
-        text-align: center;text-indent:7.777777777777778vw;letter-spacing: -0.2777777777777778vw;
-        span{color: #000;}
+        text-indent:4.77777777777778vw;letter-spacing: -0.2777777777777778vw;
+        .h3_txt1{
+            color: #000;display: inline-block;margin-right: $vw12;
+        }
+        .h3_txt2{
+            position: relative;color: rgba(0,0,0,.5);font-size: 1em;
+            &::after{content: attr(data-text);position: absolute;left: -$vw16;overflow: hidden;
+                max-width:7.5em;white-space: nowrap;color: #fff;}
+            &.uchamp_ani::after{
+                animation: loading 2s linear;
+            }    
+        }
+        @keyframes loading {
+            0% {
+                max-width: 0;
+            }
+        }
     }
     .uchamp_recruit{
      margin-top: 72.22222222222222vw;
-     p:first-of-type{font-size: $vw14;letter-spacing: -0.2777777777777778vw;;margin-bottom: $vw35;}
+     & > p:first-of-type, ul li{@include transition(all 1s);}
+     p:first-of-type{
+        @include traDelay(0.2s);
+        position: relative;top: 80px;opacity: 1;
+         font-size: $vw14;letter-spacing: -0.2777777777777778vw;margin-bottom: $vw35;
+        }
      ul{
          li{  
-             font-size: $vw14;margin-bottom: $vw20;
+             &:nth-of-type(1){@include traDelay(0.3s);}
+             &:nth-of-type(2){@include traDelay(0.4s);}
+             &:nth-of-type(3){@include traDelay(0.5s);}
+             font-size: $vw14;margin-bottom: $vw20;position: relative;top: 80px;opacity: 0;
              dl{
                 &::after{content:"";display: block;clear: both;}
                 dt{float: left;width: $vw50;}
@@ -204,6 +227,9 @@
             left: $vw40;
             span{top: -2.777777777777778vw;left: -2.777777777777778vw; color: $lastColor;}
             img{width: $vw80;height: $vw12;}
+    }
+    p.fadeUp, li.fadeUp{
+        top: 0;opacity: 1;
     }
     }
 }

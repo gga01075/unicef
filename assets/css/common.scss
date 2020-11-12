@@ -62,8 +62,7 @@ body{font-family:Score4,"맑은 고딕","Malgun Gothic",sans-serif;font-size: $v
     }
 }
 
-#gnb{display: none;position: fixed;top: $vw60 ;left: 100%;z-index: 1200;width: 100%;height: calc(100% - 16.66666666666667vw);
-background:$secondColor;color: #000;overflow-y: auto;
+#gnb{display: none;position: fixed;top: $vw60 ;left: 100%;z-index: 1200;width: 100%;height: calc(100% - 16.66666666666667vw);background:$secondColor;color: #000;overflow-y: auto;
 
   .depth2_now{
     display: none;position: absolute;top:$vw20;left: 6.944444444444444vw;width: 72.22222222222222vw;height: $vw30;

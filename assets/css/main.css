@@ -204,7 +204,8 @@
         float: left;
         position: relative;
         width: 18.88888888888889vw;
-        padding-top: 0px; }
+        padding-top: 0px;
+        opacity: 0; }
         .corona .corona_spon ul li::before {
           -webkit-border-radius: 50%;
           border-radius: 50%;
@@ -336,20 +337,64 @@
   padding-bottom: 150vw;
   background: #3d1322 url("../images/main/uchamp_bg2.svg") no-repeat; }
   .uchamp h3 {
-    text-align: center;
-    text-indent: 7.777777777777778vw;
+    text-indent: 4.77777777777778vw;
     letter-spacing: -0.2777777777777778vw; }
-    .uchamp h3 span {
-      color: #000; }
+    .uchamp h3 .h3_txt1 {
+      color: #000;
+      display: inline-block;
+      margin-right: 3.3333333333vw; }
+    .uchamp h3 .h3_txt2 {
+      position: relative;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 1em; }
+      .uchamp h3 .h3_txt2::after {
+        content: attr(data-text);
+        position: absolute;
+        left: -4.4444444444vw;
+        overflow: hidden;
+        max-width: 7.5em;
+        white-space: nowrap;
+        color: #fff; }
+      .uchamp h3 .h3_txt2.uchamp_ani::after {
+        animation: loading 2s linear; }
+@keyframes loading {
+  0% {
+    max-width: 0; } }
   .uchamp .uchamp_recruit {
     margin-top: 72.22222222222222vw; }
+    .uchamp .uchamp_recruit > p:first-of-type, .uchamp .uchamp_recruit ul li {
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s; }
     .uchamp .uchamp_recruit p:first-of-type {
+      -webkit-transition-delay: 0.2s !important;
+      -o-transition-delay: 0.2s !important;
+      transition-delay: 0.2s !important;
+      position: relative;
+      top: 80px;
+      opacity: 1;
       font-size: 3.8888888889vw;
       letter-spacing: -0.2777777777777778vw;
       margin-bottom: 9.7222222222vw; }
     .uchamp .uchamp_recruit ul li {
       font-size: 3.8888888889vw;
-      margin-bottom: 5.5555555556vw; }
+      margin-bottom: 5.5555555556vw;
+      position: relative;
+      top: 80px;
+      opacity: 0; }
+      .uchamp .uchamp_recruit ul li:nth-of-type(1) {
+        -webkit-transition-delay: 0.3s !important;
+        -o-transition-delay: 0.3s !important;
+        transition-delay: 0.3s !important; }
+      .uchamp .uchamp_recruit ul li:nth-of-type(2) {
+        -webkit-transition-delay: 0.4s !important;
+        -o-transition-delay: 0.4s !important;
+        transition-delay: 0.4s !important; }
+      .uchamp .uchamp_recruit ul li:nth-of-type(3) {
+        -webkit-transition-delay: 0.5s !important;
+        -o-transition-delay: 0.5s !important;
+        transition-delay: 0.5s !important; }
       .uchamp .uchamp_recruit ul li dl::after {
         content: "";
         display: block;
@@ -384,6 +429,9 @@
       .uchamp .uchamp_recruit #uchampMore img {
         width: 22.2222222222vw;
         height: 3.3333333333vw; }
+    .uchamp .uchamp_recruit p.fadeUp, .uchamp .uchamp_recruit li.fadeUp {
+      top: 0;
+      opacity: 1; }
 
 @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (-webkit-min-device-pixel-ratio: 2) {
   .slogan .swiper-slide.slide1 {

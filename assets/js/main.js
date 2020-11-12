@@ -49,7 +49,8 @@ $(document).ready(function () {
   });
 
   //불릿 클릭이벤트
-  _sloganBullets.on('click', function () {
+/*   
+_sloganBullets.on('click', function () {
     if ($(this).hasClass('slide1')) {
       $(this).addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');
       $('.slogan .swiper-wrapper .swiper-slide').removeClass('swiper-slide-active');
@@ -63,7 +64,8 @@ $(document).ready(function () {
       $('.slogan .swiper-wrapper .swiper-slide').removeClass('swiper-slide-active');
       $('.slogan .swiper-wrapper .slide3').addClass('swiper-slide-active');
     }
-  });
+  }); 
+  */
 
   $('.slogan .play_stop .autoplay').hide();
   //stop,play버튼 클릭 이벤트
@@ -95,10 +97,22 @@ $(document).ready(function () {
   $(window).on('scroll',function(){
     var scrollTop = $(window).scrollTop();
     var coronaTop = $('.corona').offset().top;
+    var uchampTop = $('.uchamp').offset().top;
     if(scrollTop > coronaTop - 250){
       $('.corona_spon ul li').animate({opacity:1});
-
     }
+
+    if(scrollTop > uchampTop - 650){
+      $('.uchamp .h3_txt2').addClass('uchamp_ani');
+      $('.uchamp_recruit>p:first,.uchamp_recruit li').addClass('fadeUp');
+    }
+
+    if(scrollTop > uchampTop + 70){
+      $('.uchamp_recruit>p:first,.uchamp_recruit li').addClass('fadeUp');
+    }
+
+
+
     
   });
 

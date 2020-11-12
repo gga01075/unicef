@@ -41,7 +41,7 @@
           transition-delay: 1s !important;
           display: inline-block;
           font-size: 6.6666666667vw;
-          letter-spacing: -2.2px;
+          letter-spacing: -0.6111111111111111vw;
           margin-bottom: 2.7777777778vw; }
         .slogan .swiper-container .swiper-wrapper .swiper-slide .slogan_txt p {
           -webkit-transition-delay: 1.4s !important;
@@ -109,7 +109,7 @@
     .slogan .swiper-container #bullets {
       position: absolute;
       right: 11.1111111111vw;
-      bottom: 33.33333333333333vw;
+      bottom: 36.11111111111111vw;
       z-index: 10; }
       .slogan .swiper-container #bullets .swiper-pagination-bullet {
         -webkit-border-radius: 0;
@@ -138,6 +138,20 @@
         font-family: aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;
         font-size: 8.3333333333vw;
         color: #fff; }
+    .slogan .swiper-container .play_stop {
+      position: absolute;
+      right: 7.5vw;
+      bottom: 2.7777777778vw;
+      z-index: 10;
+      width: 3.888888888888889vw;
+      height: 4.444444444444444vw; }
+      .slogan .swiper-container .play_stop button {
+        position: absolute;
+        left: 0;
+        top: 0; }
+        .slogan .swiper-container .play_stop button img {
+          width: 3.888888888888889vw;
+          height: 4.444444444444444vw; }
   .slogan::after {
     content: "";
     position: absolute;

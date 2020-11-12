@@ -56,11 +56,36 @@ $(document).ready(function () {
   });
 
   //불릿 클릭이벤트
-  _sloganBullets.on('click',function(){
-
+  _sloganBullets.on('click', function () {
+    if ($(this).hasClass('slide1')) {
+      $(this).addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');
+      $('.slogan .swiper-wrapper .swiper-slide').removeClass('swiper-slide-active');
+      $('.slogan .swiper-wrapper .slide1').addClass('swiper-slide-active');
+    } else if ($(this).hasClass('slide2')) {
+      $(this).addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');
+      $('.slogan .swiper-wrapper .swiper-slide').removeClass('swiper-slide-active');
+      $('.slogan .swiper-wrapper .slide2').addClass('swiper-slide-active');
+    } else {
+      $(this).addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');
+      $('.slogan .swiper-wrapper .swiper-slide').removeClass('swiper-slide-active');
+      $('.slogan .swiper-wrapper .slide3').addClass('swiper-slide-active');
+    }
   });
 
-
+  $('.slogan .play_stop .autoplay').hide();
+  //stop,play버튼 클릭 이벤트
+   /* 일시정지 클릭 */
+   $('.slogan .play_stop .autostop').on('click',function(){
+      $(this).hide().siblings().show();
+      mySwiper1.autoplay.stop();
+      return false;
+   });
+   /* 자동실행 클릭 */
+   $('.slogan .play_stop .autoplay').on('click',function(){
+      $(this).hide().siblings().show();
+      mySwiper1.autoplay.start();
+      return false;
+   });
 
   //SLOGAN mask animation
   function maskAni() {
@@ -70,8 +95,6 @@ $(document).ready(function () {
     });
   }
   maskAni();
-
-
 
   //NEWS 슬라이더
   var mySwiper2 = new Swiper('.news .swiper-container', {

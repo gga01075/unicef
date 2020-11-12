@@ -22,7 +22,7 @@
                     }
                    strong{
                        @include traDelay(1s);
-                       display: inline-block;font-size: $vw24;letter-spacing: -2.2px;margin-bottom: $vw10;
+                       display: inline-block;font-size: $vw24;letter-spacing: -0.6111111111111111vw;margin-bottom: $vw10;
                     }
                    p{  
                        @include traDelay(1.4s);
@@ -56,12 +56,11 @@
                 .slogan_txt{
                     strong,p{opacity: 1;top:0;}
                  }
-            }
-            
+            }      
         }
         //sloganSlide bullet
         #bullets{
-            position: absolute;right: $vw40;bottom: 33.33333333333333vw;z-index: 10;
+            position: absolute;right: $vw40;bottom: 36.11111111111111vw;z-index: 10;
             .swiper-pagination-bullet{
                 @include radius(0);
                 position: absolute;
@@ -78,6 +77,19 @@
             .swiper-pagination-current{font-family:aGothic17, "맑은 고딕", "Malgun Gothic", sans-serif;font-size: $vw30;color: #fff;}
             .swiper-pagination-total{}
         }
+        // play, stop버튼
+        .play_stop{
+            position: absolute;right: 7.5vw;bottom: $vw10;z-index: 10;
+            width:3.888888888888889vw;height:4.444444444444444vw;
+            button{
+             position: absolute;left: 0;top: 0;  
+             img{width:3.888888888888889vw;height:4.444444444444444vw;}
+            }
+        
+            .autoplay{}
+            .autostop{}
+        }
+
     }
     &::after{content:"";position: absolute;top: 61.11111111111111vw;right: 0;width: 51.11111111111111vw;height: 60.27777777777778vw;background: #e4e4e4;}
 }

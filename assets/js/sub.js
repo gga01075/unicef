@@ -20,12 +20,6 @@ $(document).ready(function () {
   });
 
   //how_reg 탭브라우징 
-  var _tabBtn = $('#howregTab .tablist .tab');
-  _tabBtn.on('click', function () {
-    console.log($(this));
-    var controls = $(this).attr('aria-controls');
-    console.log(controls);
-  });
 
   /* 1) 초기값 */
   $('.tab:first-of-type, .tabpanel:first-of-type').addClass('active').attr('tabIndex', 0);
@@ -35,7 +29,6 @@ $(document).ready(function () {
   /* 2) 탭버튼에서 키보드를 누르는 이벤트(keydown) - 키보드 제어 */
   $('.tab').on('keydown', function (e) {
     var key = e.keyCode;
-    console.log(key); //왼쪽방향키 37 , 오른쪽 방향키 39, 스페이스바 32 , 엔터 13
     switch (key) {
       case 37: //왼쪽 방향키
         $(this).attr('tabIndex', -1);
@@ -103,7 +96,7 @@ $(document).ready(function () {
     el: '.swiper-scrollbar',
     draggable:true,
   },
-})
+});
 
 
   //정기후원 사용자정보입력페이지 - 이메일 select

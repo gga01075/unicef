@@ -38,7 +38,7 @@ $(document).ready(function () {
   }
 
   // fraction에 활성화 추가
-  var bullets = $('.swiper-pagination-bullet');
+  var _sloganBullets = $('.swiper-pagination-bullet');
 
 
   mySwiper1.on('slideChange', function () {
@@ -46,17 +46,19 @@ $(document).ready(function () {
     var slide = "slide" + ($('.swiper-pagination-current').text());
 
     // 기존 슬라이더 클래스명 제거 후 활성화 bullet에 클래스명 추가하기
-    bullets.removeClass("swiper-pagination-bullet-active");
-    $.each(bullets, function (index, value) {
+    _sloganBullets.removeClass("swiper-pagination-bullet-active");
+    $.each(_sloganBullets, function (index, value) {
       if ($(this).hasClass(slide)) {
         $(this).addClass("swiper-pagination-bullet-active");
         return false;
       }
     });
-
-
   });
 
+  //불릿 클릭이벤트
+  _sloganBullets.on('click',function(){
+
+  });
 
 
 

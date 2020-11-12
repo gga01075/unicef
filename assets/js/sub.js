@@ -88,29 +88,25 @@ $(document).ready(function () {
   }
 
 
+ //by_reg 슬라이드 
+ var mySwiper4 = new Swiper('.by_reg .swiper-container', {
+  // Optional parameters
 
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable:true,
+  },
+})
 
 
   //정기후원 사용자정보입력페이지 - 이메일 select
-  var _emailSelect = $('#emailBackSel');
-  emailSelTxt = _emailSelect.val();
-  console.log(emailSelTxt);
-
   $('#emailBackSel').change(function () {
     $("#emailBackSel option:selected").each(function () {
       if ($(this).val() == '1') {
@@ -128,12 +124,10 @@ $(document).ready(function () {
     });
   });
 
-
-
   // 1) #allChk의 클릭 이벤트 
   $('#collectAgree').on('click', function () {
     // 2) 나 자신이 checked속성을 가지고 있는지 확인
-    var active = $(this).prop('checked');
+    var active = $(this).prop('checked'); //true or false
 
     /*
     prop() 메서드는 속성을 가지고 있으면 true, 가지고 있지 않으면 false를 반환 

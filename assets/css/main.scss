@@ -124,7 +124,7 @@
       .swiper-slide{
         padding-top: $vw35;
         &::after{content:"";display: block;clear: both;}
-        img{float: left;}
+        img{float: left;width: 41.66666666666667vw;}
         dl{ 
             position: relative;left: $vw15;top: 0;float: left;width: 50vw;padding-top:$vw40;
             dt{font-size: $vw18;}
@@ -146,9 +146,11 @@
        .swiper-pagination{
             bottom:$vw20;left:6.388888888888889vw;
             .swiper-pagination-bullet{
-                @include radius($vw12);
-                width: $vw10;height: $vw10;background: #aaa;opacity: 1;margin-left: $vw10;}
-            .swiper-pagination-bullet-active {width: $vw30;background: $thirdColor;}
+                @include radius($vw12);@include transition(all 0.2s);
+                width: $vw10;height: $vw10;background: #aaa;opacity: 1;margin-left: $vw10;
+            &.swiper-pagination-bullet-active {width: $vw30;background: $thirdColor;}
+            }
+            
         }
     }
 

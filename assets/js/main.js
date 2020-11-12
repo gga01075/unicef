@@ -1,12 +1,5 @@
 $(document).ready(function () {
 
-  //#relContent의 높이 
-  var sloganHeight = $('.slogan').outerHeight();
-  $('#relContent').css({
-    top: sloganHeight
-  });
-
-
   //SLOGAN
   var mySwiper1 = new Swiper('.slogan .swiper-container', {
     // Optional parameters
@@ -95,6 +88,32 @@ $(document).ready(function () {
     });
   }
   maskAni();
+
+
+ //코로나 스크롤이벤트
+
+  $(window).on('scroll',function(){
+    var scrollTop = $(window).scrollTop();
+    var coronaTop = $('.corona').offset().top;
+    if(scrollTop > coronaTop - 250){
+      $('.corona_spon ul li').animate({opacity:1});
+
+    }
+    
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   //NEWS 슬라이더
   var mySwiper2 = new Swiper('.news .swiper-container', {

@@ -5,7 +5,6 @@ $(document).ready(function(){
     var _dep2a = $('.depth2>li>a');
     var _dep1First = $('#gnb ul>li>a[data-link="first1"]');
     var _dep1Last = $('#gnb ul>li>a[data-link="last1"]');
-    console.log(_dep1First,_dep1Last);
 
     //햄버거 메뉴 클릭
     $('.btn_menu').on('click',function(){
@@ -80,11 +79,6 @@ $(document).ready(function(){
 
     }
     
-
-
-
-
-
     //#gnb depth2 a클릭
     _dep2a.on('click',function(){
         if($(this).next().length===0){

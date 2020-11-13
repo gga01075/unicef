@@ -360,27 +360,28 @@
   margin-top: $vw40;
   strong{display: block;font-family:Score4,"맑은 고딕","Malgun Gothic",sans-serif !important;font-size: $vw14;margin: $vw20 0 1.111111111111111vw;}
   label{font-weight: 600;}
-  input[type="radio"]{width:$vw10;height:$vw10;}
-  input+label{margin-right: $vw10;}
+  input[type="radio"]{width:$vw15;height:$vw15;position: relative;top: 0.5555555555555556vw;}
+  input+label{margin:0 $vw5 0 0.8333333333333333vw;}
   p{margin-top: 1.944444444444444vw;}
 }
 
 .info_collect{
   margin-top: $vw40;font-weight: 600;
   legend{margin-bottom: $vw15;}
-  input[type="checkbox"]{width:$vw15;height:$vw15;display: inline-block;margin-top: 0.5555555555555556vw;}
+  input[type="checkbox"]{width:$vw15;height:$vw15;display: inline-block;margin-top: 2.5555555555555556vw;}
   ul{
     border: 0.5555555555555556vw solid #000;margin: $vw10 0 $vw30;
     li{
-      padding: $vw10 $vw5;line-height: $vw20;
+      @include border-box;
+      padding: $vw16 $vw5 $vw10;line-height: $vw20;
       +li{border-top: $vw1 solid #000;}
       &::after{content:"";display: block;clear: both;}
+      input{position: relative;top: -1.944444444444444vw;}
       >*{float: left;}
       a{float: right;margin-right: $vw5;}
     }
   }
 }
-
 
 @media 
 screen and (min-resolution: 192dpi), //안드로이드 

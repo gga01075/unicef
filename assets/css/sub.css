@@ -548,10 +548,12 @@
   .reception_agree label {
     font-weight: 600; }
   .reception_agree input[type="radio"] {
-    width: 2.7777777778vw;
-    height: 2.7777777778vw; }
+    width: 4.1666666667vw;
+    height: 4.1666666667vw;
+    position: relative;
+    top: 0.5555555555555556vw; }
   .reception_agree input + label {
-    margin-right: 2.7777777778vw; }
+    margin: 0 1.3888888889vw 0 0.8333333333vw; }
   .reception_agree p {
     margin-top: 1.944444444444444vw; }
 
@@ -564,12 +566,14 @@
     width: 4.1666666667vw;
     height: 4.1666666667vw;
     display: inline-block;
-    margin-top: 0.5555555555555556vw; }
+    margin-top: 2.5555555555555556vw; }
   .info_collect ul {
     border: 0.5555555555555556vw solid #000;
     margin: 2.7777777778vw 0 8.3333333333vw; }
     .info_collect ul li {
-      padding: 2.7777777778vw 1.3888888889vw;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 4.4444444444vw 1.3888888889vw 2.7777777778vw;
       line-height: 5.5555555556vw; }
       .info_collect ul li + li {
         border-top: 0.2777777778vw solid #000; }
@@ -577,6 +581,9 @@
         content: "";
         display: block;
         clear: both; }
+      .info_collect ul li input {
+        position: relative;
+        top: -1.944444444444444vw; }
       .info_collect ul li > * {
         float: left; }
       .info_collect ul li a {

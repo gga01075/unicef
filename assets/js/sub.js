@@ -117,41 +117,15 @@ $(document).ready(function () {
     });
   });
 
-  // 1) #allChk의 클릭 이벤트 
+  // #collectAgree 클릭 이벤트 
   $('#collectAgree').on('click', function () {
-    // 2) 나 자신이 checked속성을 가지고 있는지 확인
+
     var active = $(this).prop('checked'); //true or false
 
-    /*
-    prop() 메서드는 속성을 가지고 있으면 true, 가지고 있지 않으면 false를 반환 
-       예외) value는 그 값을 그대로 가져온다
-    */
-
-    // 참일 경우, #infoChk를 찾아서 체크박스중 name속성이 kind인 선택자에 속성변경(checked)
-    /*                
-    if(active){
-      $('#infoChk :checkbox[name="kind"]').prop({checked: true});
-    }else{
-      $('#infoChk :checkbox[name="kind"]').prop({checked: false});
-    } 
-    */
-
-    //조건문 대신 active 변수에 담긴 true와 false로 checked속성을 한줄로 변경할 수 있다.
     $('.info_collect :checkbox[name="agree"]').prop({
       checked: active
     });
   });
-
-
-
-
-
-
-
-
-
-
-
 
 
 });

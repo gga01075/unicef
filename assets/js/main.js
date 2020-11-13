@@ -113,18 +113,6 @@ _sloganBullets.keydown(function(key) {
   });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   //NEWS 슬라이더
   var mySwiper2 = new Swiper('.news .swiper-container', {
     pagination: {

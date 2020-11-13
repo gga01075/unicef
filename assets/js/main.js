@@ -24,9 +24,9 @@ $(document).ready(function () {
     if (i === 1) {
       // add active class if it is the first bullet
       $('#bullets').append('<span class="swiper-pagination-bullet' + ' ' + 'swiper-pagination-bullet-active' +
-        ' ' + 'slide' + i + '" role="button" aria-label="' + menu[i - 1] + '"></span>');
+        ' ' + 'slide' + i + '" role="button" tabindex="0" aria-label="' + menu[i - 1] + '"></span>');
     } else {
-      $('#bullets').append('<span class="swiper-pagination-bullet' + ' ' + 'slide' + i + '"  role="button" aria-label="' + menu[i - 1] + '"></span>');
+      $('#bullets').append('<span class="swiper-pagination-bullet' + ' ' + 'slide' + i + '"  role="button" tabindex="0" aria-label="' + menu[i - 1] + '"></span>');
     }
   }
 
@@ -50,11 +50,21 @@ $(document).ready(function () {
 
   //불릿 클릭이벤트
 _sloganBullets.on('click', function () {
-      $(this).addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');
-      var slideIdx = $(this).index()+1;
-      mySwiper1.slideTo(slideIdx);
+      var _target = $(this);
+      bulletMove(_target);
   }); 
-  
+
+_sloganBullets.keydown(function(key) {
+    var _target = $(this);
+    if (key.keyCode == 13) {
+      bulletMove(_target);
+    }
+});
+  function bulletMove(_target){
+    _target.addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');
+    var slideIdx = _target.index()+1;
+    mySwiper1.slideTo(slideIdx);
+  }
 
   $('.slogan .play_stop .autoplay').hide();
   //stop,play버튼 클릭 이벤트

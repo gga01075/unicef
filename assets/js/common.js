@@ -60,7 +60,6 @@ $(document).ready(function(){
       var _dep2First =  _dep1click.next().find('[data-link="first2"]');
       var _dep2Last =  _dep1click.next().find('[data-link="last2"]');
 
-      
           //depth1 첫번째 a 태그에서 shift+tab을 눌러 header의 영역으로 포커스가 이동하지 못하게 제한
           _dep2First.on('keydown', function (e) {
             console.log(e.keyCode);   //tab을 클릭하면 9를 반환
@@ -76,7 +75,6 @@ $(document).ready(function(){
               $('.btn_menu').focus();
             }
           });
-
     }
     
     //#gnb depth2 a클릭
